@@ -505,7 +505,7 @@ td, th {
     .footer{
         height: 10rem;
         gap:1rem;
-        background: black;
+        background: rgb(54, 53, 53);
         flex-direction: column;
     }
 
