@@ -393,7 +393,6 @@ td, th {
     
     .nav-bar{
         padding: 0.1rem 0.4rem;
-        position: fixed;
     }
 
     .nav-logo{
@@ -403,10 +402,16 @@ td, th {
         font-size: 2.2rem;
     }
     .nav-links{
-        width: 10.5rem;
+        width: 11rem;
         flex-wrap: wrap;
         gap: 0.1rem;
         margin: 0.5rem;
+        position: fixed;
+        top: -1;
+        left: 10rem;
+        background: skyblue;
+        padding: 0.3rem;
+        border-radius: 0.3rem;
     }
     
     .nav-links a{
@@ -415,9 +420,7 @@ td, th {
     }
 
     .hero-section{
-        margin-top: 3rem;
         gap:0rem;
-        padding-top: 0.7rem;
     }
     .hero-image{
         width: 11rem;
@@ -425,6 +428,7 @@ td, th {
     
     .hello{
         width: 10rem;
+        margin-top: 3rem;
     }
     
     .hello a{
