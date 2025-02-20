@@ -6,7 +6,7 @@
 
 /*-----------Global stylings----------*/
 p{
-    color:black;
+    color:#01172f;
     font-size: 1.2rem;}
 li{
     color:white}
@@ -17,16 +17,16 @@ color: white;}
 
 h1{
     font-size: 3rem;
-    color: rgb(73, 198, 247);}
+    color: rgb(176, 165, 136);}
 h2{
     font-size: 2rem;
-    color: white;}
+    color: #01172f;}
 h3{
     font-size: 1.2rem;
-    color: rgb(89, 89, 244);}
+    color: rgb(176, 165, 136);}
 h4{
     font-size: 0.8rem;
-    color: black;
+    color: rgb(176, 165, 136);
 }
 
 body{
@@ -41,7 +41,7 @@ body{
 .nav-bar{
     width: 100%;
     padding: 0rem 1rem;
-    background: skyblue;
+    background: #002147;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,13 +53,13 @@ body{
     font-weight: bold;
 }
 .nav-logo span{
-    color: #000;
+    color: rgb(176, 165, 136);;
     font-size: 2rem;
 }
 .nav-links{
     display: flex;
     gap: 1rem;
-    list-style: none;  
+    list-style: none; 
 }
 
 
@@ -84,16 +84,18 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    background: rgb(181, 226, 244);
+    background: #ffffff;
 }
 
 .hero-image{
     width: 35rem;
-    /* border: 0.1rem solid black; */
+    margin-top: 0rem;
+    box-shadow: 1px 5px 10px #002147;
 }
 
 .hello{
     width: 35rem;
+    margin-top: 1rem;
     /* border: 0.1rem solid black; */
     display: flex;
     flex-direction: column;
@@ -103,7 +105,7 @@ body{
 }
 
 .hello a{
-    padding: 0.5rem;
+    padding: 0.4rem 0.8rem;
     font-size: 1rem;
     border: 0.1rem solid white;
     border-radius: 3rem;
@@ -111,6 +113,8 @@ body{
     background-color: rgb(251, 138, 138);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    box-shadow: 1px 5px 20px #002147;
+    transition: 500ms;
 }
 
 .about-section{
@@ -119,7 +123,7 @@ body{
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    background-color: skyblue;
+    background-color: #f4f5f6;
 }
 
 .about-section .div{
@@ -142,9 +146,11 @@ body{
 .first-child-card .card{
     width: 16rem;
     height: 22rem;
+    padding-top: 1rem;
     border-radius: 0.5rem;
     /* border: 0.1rem solid red; */
-    background-color: rgb(181, 226, 244);
+    background-color: #ffffff;
+    box-shadow: 1px 5px 10px #002147;
 }
 
 #card-one{
@@ -169,7 +175,7 @@ body{
 .skill-icon{
     width: 7rem;
     height: 2rem;
-    border: 0.1rem solid white;
+    border: 0.1rem solid #002147;
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
@@ -187,10 +193,10 @@ body{
     /* border: 0.1em solid RED; */
 }
 table{
-    width: 16rem;
+    width: 15.5rem;
     border-collapse: collapse;
-    border: 0.1em solid white;
-    background: rgb(181, 226, 244);
+    border: 0.1em solid #002147;
+    background: #ffffff;
     margin-top: 1rem;
 }
 
@@ -201,7 +207,7 @@ th, td{
 
 th{
     width: 40%;
-    background: rgb(54, 53, 53);
+    background: #002147;
     color: white;
 }
 
@@ -213,7 +219,7 @@ td:nth-child(3){
 }
 
 td, th {
-    border: 0.1rem solid white;
+    border: 0.1rem solid #002147;
 }
 
 
@@ -226,6 +232,8 @@ td, th {
 
 .about-image{
     width: 30rem;
+    /* box-shadow: 1px 5px 10px #002147;
+    border-radius: 1rem; */
     /* border: 0.1rem solid black; */
 }
 .socials{
@@ -236,12 +244,14 @@ td, th {
     align-items: center;
     gap: 1rem;
     padding: 0.4rem;
-    background: white;
+    background: #f4f5f6;
     border-radius: 0.5rem;
 }
 .socials img{
     width: 2rem;
     transition: 500ms;
+    box-shadow: 1px 5px 10px #002147;
+    border-radius: 1.3rem;
 }
 
 .socials img:hover{
@@ -252,7 +262,7 @@ td, th {
 .section-three{
     width: 100%;
     height: auto;
-    background: rgb(181, 226, 244);
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -279,16 +289,16 @@ td, th {
 }
 
 .service-card{
-    width: 25rem;
+    width: 20rem;
     height: 15rem;
-    background: skyblue;
+    background: #f4f5f6;
     border-radius: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    box-shadow: -3px 2px 3px #ADB0B7;
+    box-shadow: 1px 5px 10px #002147;
 }
 
 .service-card img{
@@ -299,7 +309,7 @@ td, th {
 
 .section-four{
     width: 100%;
-    background: skyblue;
+    background: #002147;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -329,7 +339,8 @@ td, th {
 
 .third-image:hover{
     opacity: 0.9;
-    background: skyblue;
+    background: rgb(176, 165, 136);
+    box-shadow: -1px 1px 12px white;
 }
 
 .section-four-box1{
@@ -342,6 +353,12 @@ td, th {
     /* border: 0.1rem solid #747883; */
 }
 
+#contact-me p{
+    color: white;
+}
+#contact-me h2{
+    color: white;
+}
 
 .section-four-box2{
     width: 9rem;
@@ -352,22 +369,23 @@ td, th {
 }
 
 .section-four-box2 a{
-    border: 0.1rem solid #F2F5FC;
-    background: skyblue;
-    padding: .4rem;
+    background: #01172f;
+    padding: .2rem .6rem;
+    border:0.1rem solid white;
     border-radius: 1.1rem;
     transition: 1000ms;
 }
 .section-four-box2 a:hover{
-    background: white;
-    padding: .5rem;
+    background: #01172f;
+    border:0.1rem solid rgb(176, 165, 136);
+    padding: .4rem .8rem;
     border-radius: 1.1rem;
-    color: skyblue;
+    color: rgb(176, 165, 136);
 }
 .footer{
     width: 100%;
-    height: 2rem;
-    background: rgb(73, 198, 247);
+    height: 3rem;
+    background: #01172f;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -375,6 +393,10 @@ td, th {
 }
 
 /*Media Queries below starting from larger screen down to the smallest screen*/
+        
+/* For screens up to 1150px */
+
+/* For screens up to 600px */
 
 /* For screens up to 431px */
 
@@ -388,8 +410,8 @@ td, th {
     h3{
         font-size: 1.1rem;}
     h4{
-        font-size: 0.8rem;
-        color: white;}
+        font-size: 0.7rem;
+        color: rgb(176, 165, 136);}
     
     .nav-bar{
         padding: 0.1rem 0.4rem;
@@ -409,7 +431,7 @@ td, th {
         position: fixed;
         top: -1;
         left: 10rem;
-        background: skyblue;
+        background: #002147;
         padding: 0.3rem;
         border-radius: 0.3rem;
     }
@@ -423,7 +445,7 @@ td, th {
         gap:0rem;
     }
     .hero-image{
-        width: 11rem;
+        width: 12rem;
     }
     
     .hello{
@@ -441,7 +463,7 @@ td, th {
     }
     
     #card-one{
-        height: 17rem;
+        height: 18rem;
     }
     .skill-icon{
         display: flex;
@@ -463,13 +485,14 @@ td, th {
         width: 15rem;}
 
     th, td{
-        font-size: .8rem;
+        font-size: .9rem;
     }
     
     .about-image{
         width: 17rem;
-        border: 0.1rem solid white;
+        /* border: 0.1rem solid white; */
         border-radius: 3rem;
+        box-shadow: 1px 5px 10px #002147;
     }
     .socials{
         width: 2.2rem;
@@ -505,7 +528,7 @@ td, th {
     .footer{
         height: 10rem;
         gap:1rem;
-        background: rgb(54, 53, 53);
+        background: #01172f;
         flex-direction: column;
     }
 
