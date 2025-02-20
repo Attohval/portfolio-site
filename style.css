@@ -86,8 +86,11 @@ body{
 
 .hero-image{
     width: 35rem;
-    margin-top: 0rem;
     box-shadow: 1px 5px 10px #002147;
+    position:relative;
+    left: -2rem;
+    top: 0.5rem;
+    background: #ffffff;
 }
 
 .hello{
@@ -418,6 +421,10 @@ td, th {
     }
     .hero-image{
         width: 12rem;
+        position:relative;
+        left: -0.5rem;
+        top: 0.5rem;
+        background: #ffffff;
     }
     
     .hello{
