@@ -65,7 +65,6 @@ body{
 
 .nav-links a{
     width: 5rem;
-    color: white;
     font-size: 1rem;
     text-align: center;
     transition: 1200ms;
@@ -318,17 +317,6 @@ td, th {
     padding: 1rem;
 }
 
-/* .third-image-container{
-    width: 17.5rem;
-    height: 17.5rem;
-    border-radius: 11.5rem;
-    border: 0.1rem solid #F2F5FC; 
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .third-image{
     width: 17.5rem;
     /* height: 17.5rem; */
@@ -350,7 +338,6 @@ td, th {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-    /* border: 0.1rem solid #747883; */
 }
 
 #contact-me p{
@@ -368,14 +355,15 @@ td, th {
     /* border: 0.1rem solid #747883; */
 }
 
-.section-four-box2 a{
+#mail-me{
     background: #01172f;
     padding: .2rem .6rem;
     border:0.1rem solid white;
     border-radius: 1.1rem;
     transition: 1000ms;
 }
-.section-four-box2 a:hover{
+
+#mail-me:hover{
     background: #01172f;
     border:0.1rem solid rgb(176, 165, 136);
     padding: .4rem .8rem;
