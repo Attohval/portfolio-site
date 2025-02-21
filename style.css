@@ -426,8 +426,8 @@ td, th {
     }
     
     .hello a{
-        padding: 0.3rem;
-        font-size: 0.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
     }
 
     .about-section .div{
@@ -481,11 +481,12 @@ td, th {
     .section-four-box1{
         width: 18rem;
         height: 7rem;
-        gap: 0.3rem;
+        gap: 1rem;
     }
     
     .section-four{
-        gap:1rem;
+        gap:2rem;
+        flex-direction: column;
     }
     .section-four-box2{
         justify-content: center;
