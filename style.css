@@ -319,7 +319,6 @@ td, th {
 
 .third-image{
     width: 17.5rem;
-    /* height: 17.5rem; */
     border-radius: 11.2rem;
     background: white;
     transition: 1000ms;
@@ -498,7 +497,7 @@ td, th {
     }
 
     .section-four-box1{
-        width: 18rem;
+        width: 94%;
         height: 7rem; 
         gap: 1rem; 
         margin: 1rem;
@@ -509,14 +508,12 @@ td, th {
         flex-direction: column;
     }
 
-    .third-image-container{
-        margin-bottom: 1rem;
-    }
     .third-image{
         width: 92%;
     }
 
     .section-four-box2{
+        width: 92%;
         justify-content: center;
         margin-top: 1rem;
     }
