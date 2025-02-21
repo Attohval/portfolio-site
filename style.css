@@ -85,16 +85,13 @@ body{
 }
 
 .hero-image{
-    width: 35rem;
+    width: 30rem;
     box-shadow: 1px 5px 10px #002147;
-    position:relative;
-    left: -2rem;
-    top: 0.5rem;
     background: #ffffff;
 }
 
 .hello{
-    width: 35rem;
+    width: 30rem;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
@@ -377,13 +374,13 @@ td, th {
 
 @media (max-width: 431px){
     p{
-        font-size: .8rem;}  
+        font-size: 1.2rem;}  
     h1{
-        font-size: 1.2rem;}
+        font-size: 1.8rem;}
     h2{
-        font-size: 1.1rem;}
+        font-size: 1.3rem;}
     h3{
-        font-size: 1rem;}
+        font-size: 1.2rem;}
     h4{
         font-size: 0.7rem;
         color: rgb(176, 165, 136);}
@@ -420,13 +417,12 @@ td, th {
         gap: 1rem;
     }
     .hero-image{
-        width: 12rem;
-        position:unset;
+        width: 92%;
+        margin-top: 4%;
     }
     
     .hello{
-        width: 12rem;
-        margin-top: 0.5rem;
+       width: 92%;
     }
     
     .hello a{
