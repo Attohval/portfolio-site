@@ -102,7 +102,7 @@ body{
 
 .hello a{
     padding: 0.4rem 0.8rem;
-    font-size: 1rem;
+/*     font-size: 1rem; */
     border: 0.1rem solid white;
     border-radius: 3rem;
     color: white;
@@ -301,7 +301,7 @@ td, th {
     padding: 1rem;
 }
 
-.third-image-container{
+/* .third-image-container{
     width: 17.5rem;
     height: 17.5rem;
     border-radius: 11.5rem;
@@ -309,11 +309,11 @@ td, th {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .third-image{
     width: 17.5rem;
-    height: 17.5rem;
+/*     height: 17.5rem; */
     border-radius: 11.2rem;
     background: white;
     transition: 1000ms;
@@ -332,13 +332,7 @@ td, th {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-}
-
-#contact-me p{
-    color: white;
-}
-#contact-me h2{
-    color: white;
+    margin: 1rem;
 }
 
 .section-four-box2{
@@ -361,6 +355,13 @@ td, th {
     padding: .4rem .8rem;
     border-radius: 1.1rem;
     color: rgb(176, 165, 136);
+}
+
+#contact-me p{
+    color: white;
+}
+#contact-me h2{
+    color: white;
 }
 .footer{
     width: 100%;
