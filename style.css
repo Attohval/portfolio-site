@@ -420,11 +420,9 @@ td, th {
         gap:0rem;
     }
     .hero-image{
-        width: 12rem;
-        position:relative;
-        left: -0.5rem;
-        top: 0.5rem;
-        background: #ffffff;
+        width: 10rem;
+        height: 10rem;
+        position:unset;
     }
     
     .hello{
