@@ -104,15 +104,16 @@ body{
 }
 
 .hello a{
-    padding: 0.4rem 0.8rem;
+    color: white;
+}
+#get-cv{
     border: 0.1rem solid white;
     border-radius: 3rem;
-    color: white;
-    background-color: rgb(251, 138, 138);
+    padding: 0.4rem 0.8rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background-color: rgb(251, 138, 138);
     box-shadow: 1px 5px 20px #002147;
-    transition: 500ms;
 }
 
 .about-section{
