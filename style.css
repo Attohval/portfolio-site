@@ -381,9 +381,9 @@ td, th {
     h1{
         font-size: 1.2rem;}
     h2{
-        font-size: 1.2rem;}
-    h3{
         font-size: 1.1rem;}
+    h3{
+        font-size: 1rem;}
     h4{
         font-size: 0.7rem;
         color: rgb(176, 165, 136);}
@@ -413,7 +413,7 @@ td, th {
     
     .nav-links a{
         width: 5rem;
-        font-size: 0.8rem;
+        font-size: 0.3rem;
     }
 
     .hero-section{
@@ -426,12 +426,12 @@ td, th {
     
     .hello{
         width: 10rem;
-        margin-top: 3rem;
+        margin-top: 0.5rem;
     }
     
     .hello a{
         padding: 0.3rem;
-        font-size: .5rem;
+        font-size: 0.5rem;
     }
 
     .about-section .div{
