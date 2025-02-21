@@ -417,11 +417,10 @@ td, th {
     }
 
     .hero-section{
-        gap:0rem;
+        gap: 1rem;
     }
     .hero-image{
         width: 10rem;
-        height: 10rem;
         position:unset;
     }
     
