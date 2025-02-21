@@ -389,7 +389,7 @@ td, th {
         color: rgb(176, 165, 136);}
     
     .nav-bar{
-        padding: 0.1rem 0.4rem;
+        padding: 0.1rem 0rem;
     }
 
     .nav-logo{
@@ -413,19 +413,19 @@ td, th {
     
     .nav-links a{
         width: 5rem;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .hero-section{
         gap: 1rem;
     }
     .hero-image{
-        width: 10rem;
+        width: 11rem;
         position:unset;
     }
     
     .hello{
-        width: 10rem;
+        width: 12rem;
         margin-top: 0.5rem;
     }
     
