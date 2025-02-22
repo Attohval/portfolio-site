@@ -13,7 +13,7 @@ li{
 
 a{
     text-decoration: none;
-color: white;}
+    color: white;}
 
 h1{
     font-size: 3rem;
@@ -63,7 +63,6 @@ body{
     list-style: none; 
 }
 
-
 .nav-links a{
     width: 5rem;
     font-size: 1rem;
@@ -76,7 +75,6 @@ body{
     color: rgb(73, 198, 247);;
     background: white;
 }
-
 
 .hero-section{
     width: 100%;
@@ -103,9 +101,6 @@ body{
     text-align: center;
 }
 
-.hello a{
-    color: white;
-}
 #get-cv{
     border: 0.1rem solid white;
     border-radius: 3rem;
@@ -114,6 +109,7 @@ body{
     margin-bottom: 1rem;
     background-color: rgb(251, 138, 138);
     box-shadow: 1px 5px 20px #002147;
+    font-size: 1rem;
 }
 
 .about-section{
