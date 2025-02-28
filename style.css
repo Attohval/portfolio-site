@@ -58,9 +58,9 @@ body{
     font-size: 2rem;
 }
 .nav-links{
+    list-style: none; 
     display: flex;
     gap: 1rem;
-    list-style: none; 
 }
 
 .nav-links a{
@@ -74,6 +74,12 @@ body{
 .nav-links a:hover{
     color: rgb(73, 198, 247);;
     background: white;
+}
+
+.menu-toggle{
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
 
 .hero-section{
@@ -380,7 +386,31 @@ td, th {
         
 /* For screens up to 1150px */
 
-/* For screens up to 600px */
+/* For screens up to 768px */
+@media (max-width: 768px) {
+.menu-toggle {
+    display: block;
+    color: white;
+    font-weight: bold;
+    margin: .5rem;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background: #002147;
+    position: absolute;
+    top: 3.2rem;
+    right: 0.1rem;
+    width: 10rem;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.nav-links.active {
+    display: flex;
+}
+}
 
 /* For screens up to 431px */
 
@@ -397,33 +427,11 @@ td, th {
         font-size: 0.7rem;
         color: rgb(176, 165, 136);}
     
-    .nav-bar{
-        padding: 0.1rem 0.2rem;
-        position:unset;
-    }
-
     .nav-logo{
         font-size: 1.7rem;
     }
     .nav-logo span{
         font-size: 2.2rem;
-    }
-    .nav-links{
-        width: 11rem;
-        flex-wrap: wrap;
-        gap: 0.3rem;
-        margin: 0.5rem;
-        position: fixed;
-        top: -1;
-        left:50%;
-        background: #002147;
-        padding: 0.3rem;
-        border-radius: 0.3rem;
-    }
-    
-    .nav-links a{
-        width: 5rem;
-        font-size: 0.8rem;
     }
 
     .hero-section{
@@ -447,10 +455,6 @@ td, th {
         width: 19rem;
     }
     
-    #card-one{
-        /* height: 18rem; */
-        /* border: 0.2rem solid; */
-    }
     .skill-icon{
         display: flex;
         justify-content: center;
