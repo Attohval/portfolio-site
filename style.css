@@ -131,7 +131,6 @@ body{
     width: 35rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    /* border: 0.1rem solid pink; */
 }
 
 .first-child-card{
@@ -140,7 +139,6 @@ body{
     gap: 1rem;
     flex-wrap: wrap;
     justify-content: space-around;
-    /* border: 0.1rem solid black; */
     margin-top: 1rem;
 }
 
@@ -149,7 +147,6 @@ body{
     /* height: 20rem; */
     padding-top: 1rem;
     border-radius: 0.5rem;
-    /* border: 0.1rem solid red; */
     background-color: #ffffff;
     box-shadow: 1px 5px 10px #002147;
 }
@@ -158,12 +155,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .card .skills-card{
     width: 16rem;
-    /* border: 0.1rem solid black; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -191,7 +186,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 0.1em solid RED; */
 }
 table{
     width: 15.5rem;
@@ -234,10 +228,8 @@ td, th {
 
 .about-image{
     width: 30rem;
-    /* box-shadow: 1px 5px 10px #002147;
-    border-radius: 1rem; */
-    /* border: 0.1rem solid black; */
 }
+
 .socials{
     width: 13rem;
     height: 3rem;
@@ -401,8 +393,8 @@ td, th {
     background: #002147;
     position: absolute;
     top: 3.2rem;
-    right: 0.1rem;
-    width: 10rem;
+    right: 0rem;
+    width: 100%;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
 }
@@ -439,7 +431,7 @@ td, th {
     }
     .hero-image{
         width: 92%;
-        margin-top: 4%;
+        margin-top: 3.5rem;
     }
     
     .hello{
