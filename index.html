@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentine Attoh portfolio-site</title>
+    <title>Attohval Portfolio-Site</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Media/VTECH.png">
 </head>
 <body>
     <div class="frame">
         <nav class="nav-bar" id="home">
             <div class="nav-logo"><span>V</span>TECH</div>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
             <ul class="nav-links">
                 <a href="#hero-section">Home</a>
                 <a href="#about-section">About Me</a>
@@ -25,7 +25,7 @@
                 <h1>Valentine Attoh</h1>
                 <p>Innovative Software Engineer, Passionate about Crafting Scalable Solutions. Proficient in Full Stack Development & Emerging Technologies</p>
                 <button id="get-cv">
-                    <a href="Media/my-cv.pdf" target="_blank">Download CV</a>
+                    <a href="Media/my-cv.pdf">Download CV</a>
                 </button>
             </div>
         </div>
@@ -87,10 +87,10 @@
             <div class="div" id="second-child">
                 <img class="about-image" src="Media/brownNoBG.png" alt="">
                 <div class="socials">
-                    <a href="https://github.com/Attohval" target="_blank"><img src="Media/git.png" alt="git-img"></a>
-                    <a href="https://www.linkedin.com/in/attohval" target="_blank"><img src="Media/linkedin..png" alt="linkedin-img"></a>
-                    <a href="https://www.instagram.com/attohval" target="_blank"><img src="Media/instagram.png" alt="instagram-img"></a>
-                    <a href="https://wa.me/yourphonenumber" target="_blank"><img src="Media/whatsapp.png" alt="whatsapp-img"></a>
+                    <a href=""><img src="Media/git.png" alt="git-img"></a>
+                    <a href=""><img src="Media/linkedin..png" alt="linkedin-img"></a>
+                    <a href=""><img src="Media/instagram.png" alt="instagram-img"></a>
+                    <a href=""><img src="Media/whatsapp.png" alt="whatsapp-img"></a>
                 </div>
             </div>
 
@@ -137,17 +137,17 @@
         </section>
     
         <section class="section-four" id="contact-me">
-                <img src="Media/blackNoBG.png" alt="my-img" class="third-image">
+            <!-- <div class="third-image-container">
+            </div> -->
+            <img src="Media/blackNoBG.png" alt="" class="third-image">
             <div class="section-four-box1">
                 <h2>Lets work together on your next project</h2>
-                <p>
-                    Collaborating is key! lets join forces and combine our
+                <p>Collaborating is key! lets join forces and combine our
                      skills to tackle your next project with a powerful 
-                     system that guarantees success.
-                </p>
+                     system that guarantees success.</p>
             </div>
             <div class="section-four-box2">
-             <button id="mail-me">
+                <button id="mail-me">
                     <a href="mailto:attohval@gmail.com" target="_blank" rel="noopener noreferrer">Contact Me</a>
                 </button>
             </div>
@@ -161,5 +161,10 @@
         </footer>
 
     </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
