@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 /*-----------Global stylings----------*/
@@ -40,7 +41,7 @@ body{
 
 .nav-bar{
     width: 100%;
-    padding: 0rem 1rem;
+    padding: .7rem 2rem;
     background: #002147;
     display: flex;
     justify-content: space-between;
@@ -54,26 +55,23 @@ body{
     font-weight: bold;
 }
 .nav-logo span{
-    color: rgb(176, 165, 136);;
+    color: rgb(176, 165, 136);
     font-size: 2rem;
 }
-.nav-links{
-    list-style: none; 
+.nav-links{ 
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .nav-links a{
-    width: 5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
-    transition: 1200ms;
-    border-radius: 0.2rem;
+    transition: 300ms;
 }
 
 .nav-links a:hover{
-    color: rgb(73, 198, 247);;
-    background: white;
+    text-decoration: underline;
+    color: rgb(73, 198, 247);
 }
 
 .menu-toggle{
@@ -84,6 +82,7 @@ body{
 
 .hero-section{
     width: 100%;
+    padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -92,14 +91,19 @@ body{
 }
 
 .hero-image{
-    width: 30rem;
+    width: 46%;
+    max-width: 30rem;
+    min-width: 22rem;
     margin-top: 4rem;
-    box-shadow: 1px 5px 10px #002147;
+    border: 0.1rem solid #01172f;
+    box-shadow: 0px 0px 10px #002147;
     background: #ffffff;
 }
 
 .hello{
-    width: 30rem;
+    width: 46%;
+    max-width: 30rem;
+    min-width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,29 +112,46 @@ body{
 }
 
 #get-cv{
-    border: 0.1rem solid white;
+    font-weight: bold;
     border-radius: 3rem;
-    padding: 0.4rem 1rem;
+    padding: 0.7rem 1.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: rgb(251, 138, 138);
+    background-color: #01172f;
     box-shadow: 1px 5px 20px #002147;
     font-size: 1rem;
+    transition: 300ms;
+}
+
+#get-cv:hover {
+    color: #002147;
+    background: rgb(176, 165, 136);
 }
 
 .about-section{
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    padding: 2rem;
     gap: 1rem;
-    justify-content: center;
     background-color: #f4f5f6;
 }
 
-.about-section .div{
-    width: 35rem;
-    margin-top: 1rem;
+#first-child {
+    width: 36rem;
     margin-bottom: 1rem;
+    padding: 2rem 1rem;
+}
+
+.about-image{
+    width: 20rem;
+    height: 20rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    background: #fff;
+    border: 0.1rem solid #01172f;
+    box-shadow: 0px 0px 10px #002147;
 }
 
 .first-child-card{
@@ -226,33 +247,6 @@ td, th {
     align-items: center;
 }
 
-.about-image{
-    width: 30rem;
-}
-
-.socials{
-    width: 13rem;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.4rem;
-    background: #f4f5f6;
-    border-radius: 0.5rem;
-}
-.socials img{
-    width: 2rem;
-    transition: 500ms;
-    box-shadow: 1px 5px 10px #002147;
-    border-radius: 1.3rem;
-}
-
-.socials img:hover{
-    width: 2.5rem;
-}
-
-
 .section-three{
     width: 100%;
     height: auto;
@@ -260,13 +254,13 @@ td, th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 1rem;
+    padding: 3rem 0 1rem;
 }
 
 .my-service{
     width: 92%;
-    /* border: 0.1rem solid #000000; */
 }
+
 .service{
     width: 93%;
     height: auto;
@@ -275,7 +269,6 @@ td, th {
     gap: 1.5rem;
     justify-content: center;
     justify-content: space-around;
-    /* border: 0.1rem solid #F36058; */
 }
 
 .my-service{
@@ -298,7 +291,6 @@ td, th {
 .service-card img{
     width: 4rem;
     height: 4rem;
-    /* border: 0.1rem solid #F36058; */
 }
 
 .section-four{
@@ -309,7 +301,7 @@ td, th {
     align-items: center;
     justify-content: center;
     gap:2rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .third-image{
@@ -320,9 +312,7 @@ td, th {
 }
 
 .third-image:hover{
-    opacity: 0.9;
-    background: rgb(176, 165, 136);
-    box-shadow: -1px 1px 12px white;
+    opacity: 0.7;
 }
 
 .section-four-box1{
@@ -337,41 +327,57 @@ td, th {
 .section-four-box1 p{
     color: white;
 }
+
 .section-four-box1 h2{
     color: white;
 }
 
-.section-four-box2{
-    width: 9rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    /* border: 0.1rem solid #747883; */
-}
+
 
 #mail-me{
-    background: #01172f;
-    padding: .2rem .6rem;
-    border:0.1rem solid white;
+    background: #fff;
+    padding: .4rem .8rem;
     border-radius: 1.1rem;
-    transition: 1000ms;
+    color: #01172f;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: 300ms;
+
 }
 
 #mail-me:hover{
     background: #01172f;
-    border:0.1rem solid rgb(176, 165, 136);
-    padding: .4rem .8rem;
-    border-radius: 1.1rem;
-    color: rgb(176, 165, 136);
+    color: #fff;
 }
 .footer{
     width: 100%;
-    height: 3rem;
     background: #01172f;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    padding:1rem 2rem;
+    gap: 1rem;
+}
+
+.footer h4 {
+    margin-right: 2rem;
+}
+
+.socials{
+    display: flex;
+    gap: 1rem;
+}
+.socials img{
+    width: 2rem;
+    box-shadow: 0px 0px 3px #f4f5f6;
+    border-radius: 1.3rem;
+}
+
+.pin-app {
+    position: fixed;
+    right: 2rem;
+    bottom: 6rem;
 }
 
 /*Media Queries below starting from larger screen down to the smallest screen*/
@@ -403,6 +409,11 @@ td, th {
 .nav-links.active {
     display: flex;
 }
+
+.hero-section{
+    flex-direction: column;
+    align-items: center;
+}
 }
 
 /* For screens up to 431px */
@@ -429,6 +440,7 @@ td, th {
 
     .hero-section{
         gap:1rem;
+        padding: 2rem 0;
     }
     .hero-image{
         width: 92%;
@@ -483,10 +495,6 @@ td, th {
         flex-direction: column;
     }
 
-    .socials img{
-        width: 2rem;
-    }
-
     .section-three{
         flex-direction: column;
     }
@@ -524,5 +532,21 @@ td, th {
         background: #01172f;
         flex-direction: column;
     }
+    .pin-app {
+        bottom: 10rem;
+    }
+}
 
+@media (max-width: 320px) {
+    .hero-section {
+        padding: 2rem 0;
+    }
+
+    .hero-image {
+        min-width: 18rem;
+    }
+
+    .about-section {
+        padding: 0;
+    }
 }
