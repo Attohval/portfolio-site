@@ -112,6 +112,7 @@ body{
 }
 
 #get-cv{
+    width: 10rem;
     font-weight: bold;
     border-radius: 3rem;
     padding: 0.7rem 1.2rem;
@@ -119,7 +120,7 @@ body{
     margin-bottom: 1rem;
     background-color: #01172f;
     box-shadow: 1px 5px 20px #002147;
-    font-size: .7rem;
+    font-size: 1rem;
     transition: 300ms;
 }
 
@@ -141,7 +142,7 @@ body{
 #first-child {
     width: 36rem;
     margin-bottom: 1rem;
-    padding: 2rem 1rem;
+    padding: 5rem 1rem;
 }
 
 .about-image{
@@ -254,7 +255,7 @@ td, th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 0 1rem;
+    padding: 4rem 0 1rem;
 }
 
 .my-service{
@@ -371,13 +372,18 @@ td, th {
 .socials img{
     width: 2rem;
     box-shadow: 0px 0px 3px #f4f5f6;
-    border-radius: 1.3rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
 }
 
-.pin-app {
+#pin-app {
     position: fixed;
     right: 2rem;
-    bottom: 6rem;
+    bottom: 8rem;
+}
+
+#pin-app img {
+    width: 3rem;
 }
 
 /*Media Queries below starting from larger screen down to the smallest screen*/
@@ -398,7 +404,7 @@ td, th {
     flex-direction: column;
     background: #002147;
     position: absolute;
-    top: 3.2rem;
+    top: 4.5rem;
     right: 0rem;
     width: 100%;
     padding: 1rem;
@@ -414,6 +420,18 @@ td, th {
     flex-direction: column;
     align-items: center;
 }
+
+.pin-app {
+    bottom: 10rem; 
+}
+
+@media (max-width: 471px) {
+
+    #pin-app {
+        bottom: 12rem;   
+    }
+}
+
 }
 
 /* For screens up to 431px */
@@ -443,37 +461,24 @@ td, th {
         padding: 2rem 0;
     }
     .hero-image{
-        width: 92%;
+        width: 90%;
         margin-top: 3.5rem;
     }
     
     .hello{
-        width: 92%;
-    }
-    
-    .hello a{
-        padding: 0.5rem;
-        font-size: 1rem;
-    }
-
-    .about-section .div{
-        width: 19rem;
+        width: 90%;
     }
     
     .skill-icon{
         display: flex;
-        justify-content: center;
         height: 1.7rem;        
         font-size: .6rem;
+        padding-left: 1rem;
     }
     
     .skill-icon img{
         width: 1rem;
         height: 1rem;
-    }
-
-    #second-child{
-        flex-direction:row;
     }
 
     table{
@@ -483,14 +488,16 @@ td, th {
         font-size: .9rem;
     }
     
+    .about-section {
+        padding: 0rem;
+    }
     .about-image{
-        width: 17rem;
         border-radius: 3rem;
         box-shadow: 1px 5px 10px #002147;
     }
 
     .socials{
-        width: 2.2rem;
+        width: 2.9rem;
         height: 13rem;
         flex-direction: column;
     }
@@ -532,9 +539,7 @@ td, th {
         background: #01172f;
         flex-direction: column;
     }
-    .pin-app {
-        bottom: 10rem;
-    }
+   
 }
 
 @media (max-width: 320px) {
