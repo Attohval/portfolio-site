@@ -69,9 +69,13 @@ body{
     transition: 300ms;
 }
 
-.nav-links a:hover{
-    text-decoration: underline;
+/* .nav-links a:hover{
     color: rgb(73, 198, 247);
+} */
+
+.active:hover {
+    text-decoration: underline;
+    transition: 3000ms;
 }
 
 .menu-toggle{
@@ -146,7 +150,7 @@ body{
 }
 
 .about-image{
-    width: 20rem;
+    width: 19rem;
     height: 20rem;
     margin-top: 4rem;
     border-radius: 1rem;
@@ -177,6 +181,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .card .skills-card{
@@ -255,7 +260,7 @@ td, th {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 0 1rem;
+    padding: 4rem 0 5rem;
 }
 
 .my-service{
@@ -279,6 +284,7 @@ td, th {
 .service-card{
     width: 20rem;
     height: 15rem;
+    margin-top: 2rem;
     background: #f4f5f6;
     border-radius: 1.2rem;
     display: flex;
@@ -462,7 +468,9 @@ td, th {
     }
     .hero-image{
         width: 90%;
+        min-width: unset;
         margin-top: 3.5rem;
+        border-radius: 1rem;
     }
     
     .hello{
@@ -491,6 +499,11 @@ td, th {
     .about-section {
         padding: 0rem;
     }
+
+    #first-child {
+        padding: 5rem 1rem 0;
+    }
+
     .about-image{
         border-radius: 3rem;
         box-shadow: 1px 5px 10px #002147;
@@ -502,9 +515,9 @@ td, th {
         flex-direction: column;
     }
 
-    .section-three{
+    /* .section-three{
         flex-direction: column;
-    }
+    } */
 
     .section-four-box1{
         width: 94%;
