@@ -30,6 +30,12 @@ h4{
     color: rgb(176, 165, 136);
 }
 
+h5 {
+    color: #fff;
+    font-size: .9rem;
+    margin: .5rem 0;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -68,10 +74,6 @@ body{
     text-align: center;
     transition: 300ms;
 }
-
-/* .nav-links a:hover{
-    color: rgb(73, 198, 247);
-} */
 
 .active:hover {
     text-decoration: underline;
@@ -133,6 +135,7 @@ body{
     background: rgb(176, 165, 136);
 }
 
+/*--------About styling---------*/
 .about-section{
     width: 100%;
     display: flex;
@@ -158,6 +161,64 @@ body{
     border: 0.1rem solid #01172f;
     box-shadow: 0px 0px 10px #002147;
 }
+/*--------End about styling---------*/
+
+
+/*------project-section styling-------*/
+.project-heading {
+    width: 100%;
+    padding: 1rem 1rem 0;
+    background: #002147;   
+}
+.project-section {
+    width: 100%;
+    padding: 0rem 1rem 3rem;
+    background: #002147;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content:space-around;
+}
+
+.project-cards {
+    width: 30%;
+    min-width: 20rem;
+    height: 24rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-cards img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project-cards p {
+    color: rgb(176, 165, 136);
+    font-size: .8rem;
+    text-align: justify;
+}
+
+.project-cards a {
+    width: 6rem;
+    height: 2rem;
+    padding: .2rem 1rem;
+    background: #fff;
+    color: #01172f;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+.project-cards a:hover {
+    border: 1px solid #fff;
+    background: unset;
+    color: #fff;
+    transition: 300ms ease-in;
+}
+/*------End project-section styling-------*/
 
 .first-child-card{
     width: 100%;
@@ -431,13 +492,22 @@ td, th {
     bottom: 10rem; 
 }
 
+.project-cards {
+    /* min-width: 12rem; */
+}
+
+.project-section {
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
 @media (max-width: 471px) {
 
     #pin-app {
         bottom: 12rem;   
     }
-}
-
 }
 
 /* For screens up to 431px */
