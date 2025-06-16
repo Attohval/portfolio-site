@@ -4,8 +4,8 @@
     box-sizing: border-box;
     font-size: 16px;
     color: var(--primary-text);
-    text-decoration: none;}
-
+    text-decoration: none;
+}
 :root {
     --primary-text: #242323;
     --secondary-text: #dbdcd6ea;
@@ -13,36 +13,35 @@
     --primary-bg: #dbdcd6ea;
     --secondary-bg:#242323;
     --alternate-bg: rgb(123, 133, 125);
-    --hover-color: rgb(100, 100, 100);}
-
+    --hover-color: rgb(100, 100, 100);
+}
 h1 {
-    font-size: 32px;
-    color: var(--secondary-color);}
+    font-size: 32px;}
 
 h2 {
     font-size: 28px;
     font-weight: unset;
-    color: var(--text-color);}
+    color: var(--text-color);
+}
 h2 span {
     font-size: 28px;
     font-weight: bold;
-    color: var(--secondary-color);}
-
+}
 h3 {
     font-size: 20px;
     color: var(--text-color)}
 
 h4 {
     font-size: 24px;
-    color: var(--secondary-color);
     margin-bottom: 32px;
-    background: var(--primary-bg);}
-
+    background: var(--primary-bg);
+}
 h5 {
     font-size: 32px;
+}
+h1,h2 span,h4,h5 {
     color: var(--secondary-color);
 }
-
 h6 {
     font-size: 14px;
     color: var(--primary-text);
@@ -51,27 +50,26 @@ h6 {
     display: flex;
     padding: 8px 32px;
     border-radius: 16px;
-    background: var(--secondary-color);}
-
+    background: var(--secondary-color);
+}
 .primary-btn:hover {
     background: var(--hover-color);
     color: var(--secondary-text);
-    transition: 500ms ease-in;}
-
+    transition: 500ms ease-in;
+}
 .secondary-btn {
     padding: 8px 32px;
     border-radius: 16px;
     font-weight: bold;
     color: var(--primary-text);
     background: var(--primary-bg);
-    text-align: center;}
-
+    text-align: center;
+}
 .secondary-btn:hover {
     background: var(--alternate-bg);
     color: var(--secondary-text);
     transition: 500ms ease-in;
 }
-
 .body {
     width: 100%;
     background-color: var(--primary-bg);
@@ -127,34 +125,27 @@ h6 {
     justify-content: center;
     align-items: center;
 }
-
 .hero-text {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    /* border: 1px solid ; */
 }
-
 ul {
     display: flex;
     gap: 32px;
     list-style: circle;
     padding-left: 16px;
 }
-
 .buttons {
     display: flex;
     gap: 16px;
 }
-
 .discuss-button {
     padding: 8px 32px;
     border-radius: 16px;
     background: unset;
     border: 3px solid var(--secondary-color);
-
 }
-
 .hero-image {
     width: 300px;
     height: 300px;
@@ -173,7 +164,6 @@ ul {
     border-radius: 150px;
 }/* Endo of hero styling */
 
-
 .packages {
     width: 100%;
     padding: 32px;
@@ -182,7 +172,6 @@ ul {
     align-items: center;
     justify-content:space-between;
 }
-
 .packages ul {
     width: 100%;
     display: flex;
@@ -201,13 +190,11 @@ ul {
     align-items: center;
     background: var(--alternate-bg);
 }
-
 .about-frame {
     width: 100%;
     display: flex;
     justify-content: space-around;
 }
-
 .frame-child {
     width: 300px;
     height: 450px;
@@ -220,14 +207,12 @@ ul {
     background: var(--alternate-bg);
     box-shadow: 0px 3px 10px var(--secondary-bg);
 }
-
 #frame-child-1 {
     background-image: url(Media/about-image.jpg);
     background-position: center;
     background-size: cover;
     width: 250px;
 }
-
 #frame-child-3 {
     display: flex;
     flex-wrap: wrap;
@@ -239,23 +224,18 @@ ul {
     border: 2px solid var(--secondary-color);
     border-collapse: collapse;
     height: 100%;
-    width: 100%;}
-
+    width: 100%;
+}
 .tabel-head th {
     background: var(--secondary-color);
     color: var(--secondary-text);
-    text-align: left;}
-
-th {
-    border: 2px solid var(--secondary-color);
-    padding: 4px;}
-    
-
-td {
+    text-align: left;
+}
+th,td {
     border: 2px solid var(--secondary-color);
     padding: 4px;
-}/* End of education table styling */
-
+}
+/* End of education table styling */
 
 /* Beginning of skills table styling */
 #skill-head {
@@ -293,14 +273,12 @@ td {
     padding: 64px 32px;
     background: var(--secondary-color);
 }
-
 .project-frame {
     width: 100%;
     display: flex;
     gap: 32px;
     justify-content: space-between;
 }
-
 .project-frame-child {
     width: 250px; padding: 16px;
     display: flex;
@@ -314,7 +292,6 @@ td {
     background: var(--alternate-bg);
     box-shadow: 0px 5px 5px var(--secondary-bg);
 }
-
 .project-image {
     width: 100%;
 }
@@ -329,7 +306,6 @@ td {
 }
 /* End of project section styling */
 
-
 .service {
     width: 100%;
     display: flex;
@@ -338,7 +314,6 @@ td {
     padding: 64px 16px;
     background: var(--alternate-bg);
 }
-
 .service-container {
     width: 100%;
     display: flex;
@@ -346,7 +321,6 @@ td {
     gap: 16px;
     justify-content: center;
 }
-
 .service-child {
     width: 300px;
     height: 300px;
@@ -361,7 +335,6 @@ td {
     gap: 32px;
     box-shadow: 0px 0px 10px var(--secondary-bg);
 }
-
 .service-child img {
     width: 40px;
     height: 40px;
@@ -377,17 +350,14 @@ td {
     padding: 40px 16px 0;
     background: var(--secondary-bg);
 }
-
 .footer-image {
     width: 300px;
 }
-
 .foot-message {
     display: flex;
     gap: 40px;
     align-items: center;
 }
-
 .message {
     width: 60%;
     max-width: 450px;
@@ -396,15 +366,10 @@ td {
     flex-direction: column;
     gap: 16px;
 }
-.message h5 {
-    color: var(--secondary-text);
-}
-
+.message h5,
 .foot-message p {
-    /* width: 350px; */
     color: var(--secondary-text);
 }
-
 .ri-mail-send-line {
     color: var(--secondary-color);
     margin-right: 8px;
@@ -420,22 +385,7 @@ td {
     background: var(--secondary-color);
 }
 
-.ri-whatsapp-line {
-    font-size: 30px;
-    border-radius: 10px;
-    padding: 4px;
-    border: 1px solid var(--secondary-text);
-    background: var(--secondary-bg);
-    color: var(--secondary-text);
-    position: fixed;
-    right: 16px;
-    bottom: 70px;
-}
-.ri-whatsapp-line:hover {
-    background: var(--hover-color);
-    transition: 400ms ease-in;
-}
-
+.ri-whatsapp-line, 
 .ri-arrow-up-line {
     font-size: 30px;
     border-radius: 10px;
@@ -445,8 +395,16 @@ td {
     color: var(--secondary-text);
     position: fixed;
     right: 16px;
+}
+
+.ri-whatsapp-line {
+    bottom: 70px;
+}
+.ri-arrow-up-line {
     bottom: 120px;
 }
+
+.ri-whatsapp-line:hover,
 .ri-arrow-up-line:hover {
     background: var(--hover-color);
     transition: 400ms ease-in;
@@ -474,12 +432,10 @@ td {
   transform: translateY(40px);
   transition: all 1000ms ease-in;
 }
-
 .float-in.visible {
   opacity: 1;
   transform: translateY(0);
-}    /* End of floating styling */
-
+}             /* End of floating styling */
 
 
 /* Responsive design styling */
@@ -519,7 +475,6 @@ td {
         width: 450px;
     }
 }
-
 @media (max-width: 1100px) {
     .project-frame-child {
         width: 230px;
@@ -664,7 +619,6 @@ td {
         width: 275px;
     }
 }
-
 @media (max-width:650px){
     h2 {
         font-size: 20px;
@@ -711,7 +665,6 @@ td {
         width: 200px;
     }
 }
-
 @media (max-width: 620px) {
     H1 {
         font-size: 24PX;
@@ -780,5 +733,105 @@ td {
     }
     .foot-message {
         text-align: center;
+    }
+
+    .ri-whatsapp-line,
+    .ri-arrow-up-line {
+        font-size: 26px;
+    }
+}
+@media (max-width: 330px) {
+    * {font-size: 14px;}
+    h1, h5 {
+        font-size: 22px;
+    }
+    h2,h2 span, h3, h4 {
+        font-size: 16px;
+    }
+    .nav-bar {
+        padding: 10px 16px;
+    }
+    .menu-toggle {
+        font-size: 24px;
+    }
+    .hero-image {
+        width: 250px;
+        height: 250px;
+    }
+    .buttons button {
+        width: unset;
+    }
+    .frame-child {
+        width: 250px;
+    }
+    .skills {
+        width: 115px;
+        height: 32px;}
+    .skills img {
+        width: 20px;
+        height: 20px;
+    }
+    #frame-child-1 {
+        width: 250px;
+    }
+    .project-frame-child {
+        width: 250px;
+    }
+    .service-child {
+        width: 250px;
+    }
+    .footer-image {
+        width: 250px;
+    }
+    .message {
+    min-width: 250px;}
+
+}
+@media (max-width: 260px) {
+    * {font-size: 10px;}
+    h1, h5 {
+        font-size: 16px;
+    }
+    h2,h2 span, h3, h4 {
+        font-size: 12px;
+    }
+    h6 {font-size: 10px;}
+    .nav-bar {
+        padding: 10px 16px;
+    }
+    .menu-toggle {
+        font-size: 20px;
+    }
+    .hero-image {
+        width: 190px;
+        height: 190px;
+    }
+    .buttons button {
+        width: unset;
+    }
+    .frame-child {
+        width: 190px;
+    }
+    .skills {
+        width: 80px;
+        height: 32px;}
+    #frame-child-1 {
+        display: none;
+    }
+    .project-frame-child {
+        width: 200px;
+    }
+    .service-child {
+        width: 190px;
+    }
+    .footer-image {
+        width: 190px;
+    }
+    .message {
+        min-width: 190px;}
+
+    .ri-whatsapp-line,
+    .ri-arrow-up-line {
+        font-size: 22px;
     }
 }
