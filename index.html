@@ -258,7 +258,7 @@
 
      <footer class="main-footer">
         <h6>©CopyRight</h6>
-        <h6>Valentine 2023 - 2025</h6>
+        <h6>Valentine 2023 - <span id="year"></span></h6>
         <h6>All Rights Reserved</h6>
         <h6>Designed with Passion</h6>
         <div class="socials">
@@ -270,5 +270,9 @@
         <a id="pin-app" href="https://wa.me/2348068578671?text=Hello%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank"><i class="ri-whatsapp-line"></i></a>
         <a href="#home"><i class="ri-arrow-up-line"></i></a>
      </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
