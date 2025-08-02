@@ -179,6 +179,14 @@ nav {
   transition: all 0.6s ease-in-out;
 }
 
+.project-card h3 {
+  margin-top: unset;
+}
+
+.project-card p {
+  text-align: justify;
+}
+
 .project-card img {
   width: 100%;
 }
