@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valentine Attoh | Software Engineer</title>
+  
+  <meta name="author" content="Valentine Ebuke Attoh">
+  <meta name="description" content="Personal portfolio of Valentine Ebuke Attoh, showcasing web and mobile app projects, built with HTML, CSS, and JavaScript.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Valentine Attoh, portfolio, web developer, android developer, HTML, CSS, JavaScript, Android Studio, software engineering">
+  <meta property="og:title" content="Valentine Attoh | Portfolio">
+  <meta property="og:description" content="Explore my web and mobile development projects, built with HTML, CSS, JavaScript, and Android Studio.">
+  <meta property="og:image" content="https://attohval.github.io/portfolio-site/preview-image.png">
+  <meta property="og:url" content="https://attohval.github.io/portfolio-site">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="media/icon.png">
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body class="thank-you">
+
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo"><a href="index.html">Valentine Attoh</a></div>
+
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+    </nav>
+  </header>
+
+  <section class="section">
+        <h2>Thanks for contacting me!</h2>
+        <p>Your message has been sent successfully. I'll get back to you soon.</p>
+        <a href="index.html">← Back to Home</a>
+
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="copyRight"><span>2023 - </span> <span id="year"></span> &copy;Valentine Attoh</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme Toggle
+    const toggle = document.getElementById('theme-toggle');
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', savedTheme === 'dark');
+    toggle.checked = savedTheme === 'dark';
+
+    toggle.addEventListener('change', () => {
+      const isDark = toggle.checked;
+      document.body.classList.toggle('dark-mode', isDark);
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+
+    // Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+
+    // Scroll Animation for Cards
+    const cards = document.querySelectorAll('.project-card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+  </script>
+</body>
+</html>
