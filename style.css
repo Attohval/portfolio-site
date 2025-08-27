@@ -398,18 +398,22 @@ input:checked + .slider:before {
     padding: 4rem 8rem;
   }
 }
+@media (min-width: 1280px) {
+  .project-main {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
 
+@media (max-width: 1279px) {
+  #gym-fitness,
+  #food-delivery {
+    display: none;
+  }
+}
 @media (max-width: 1024px) {
   .section {
     padding: 3rem 2rem;
   }
-
-  /* .project-main {
-    width: 100%;
-    gap: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
 }
 @media (max-width: 960px) {
   .section {
