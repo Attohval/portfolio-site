@@ -86,7 +86,7 @@ nav {
 .hero {
   display: flex;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 2rem;
   text-align: center;
   justify-content: space-between;
 }
@@ -386,7 +386,6 @@ input:checked + .slider:before {
 }
 
 
-
 /* Responsive Styles */
 
 @media (min-width: 1220px) {
@@ -395,7 +394,7 @@ input:checked + .slider:before {
   }
 
   .hero {
-    padding: 4rem 8rem;
+    padding: 2rem 8rem;
   }
 }
 @media (min-width: 1280px) {
@@ -403,7 +402,6 @@ input:checked + .slider:before {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
-
 @media (max-width: 1279px) {
   #gym-fitness,
   #food-delivery {
@@ -420,7 +418,6 @@ input:checked + .slider:before {
       padding: 3rem 1rem;
   }
 }
-
 @media (max-width: 870px) {
   .hero {
     gap: 1rem;
@@ -472,7 +469,6 @@ input:checked + .slider:before {
     margin-top: 0;
   }
 }
-
 @media (max-width: 665px) {
   .section {
     padding: 3rem 2rem;
@@ -498,7 +494,6 @@ input:checked + .slider:before {
     display: none;
   }
 }
-
 @media (max-width: 420px) {
   .section {
     padding: 3rem 1rem;
@@ -519,9 +514,7 @@ input:checked + .slider:before {
   .copyRight {
     order: 2;
   }
-  
 }
-
 @media (max-width: 335px) {
   .skills-list{
     align-items: center;
