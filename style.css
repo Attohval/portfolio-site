@@ -104,6 +104,10 @@ nav {
   margin: 1rem 0;
 }
 
+.hero-detail .primary-btn {
+  width: unset;
+}
+
 .primary-btn {
   width: 130px;
   background: var(--primary);
@@ -221,7 +225,7 @@ nav {
 }
 .project-card {
   background: var(--card);
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 1rem 0;
   border-radius: 2rem;
   border-left: 5px solid var(--primary);
@@ -434,7 +438,7 @@ input:checked + .slider:before {
 }
 @media (max-width: 960px) {
   .section {
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
   }
 }
 @media (max-width: 870px) {
@@ -515,7 +519,7 @@ input:checked + .slider:before {
 }
 @media (max-width: 420px) {
   .section {
-    padding: 3rem 1rem;
+    padding: 1rem;
   }
 
   .skills-list span {
