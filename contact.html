@@ -37,15 +37,17 @@
         <li><a href="project.html">Project</a></li>
         <li><a href="contact.html" id="active-page">Contact</a></li>
 
-        <div class="footer-right">
-          <a href="https://www.instagram.com/attohval" rel="noopener" title="instagram" target="_blank"><i class="ri-instagram-fill f-icon"></i></a>
-          <a href="https://www.facebook.com/attohval" rel="noopener" title="facebook" target="_blank"><i class="ri-facebook-box-fill f-icon"></i></a>
-          <a href="https://wa.me/2348068578671?text=Hello%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" rel="noopener" title="whatsapp" target="_blank"><i class="ri-whatsapp-fill f-icon"></i></a>
-        </div>
+        <li>
+          <div class="footer-right">
+            <a href="https://www.instagram.com/attohval" rel="noopener" title="instagram" target="_blank"><i class="ri-instagram-fill f-icon"></i></a>
+            <a href="https://www.facebook.com/attohval" rel="noopener" title="facebook" target="_blank"><i class="ri-facebook-box-fill f-icon"></i></a>
+            <a href="https://wa.me/2348068578671?text=Hello%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" rel="noopener" title="whatsapp" target="_blank"><i class="ri-whatsapp-fill f-icon"></i></a>
+          </div>
+        </li>
       </ul>
 
       <label class="switch">
-        <input type="checkbox" id="theme-toggle">
+        <input type="checkbox" id="theme-toggle" title="Toggle dark mode">
         <span class="slider"></span>
       </label>
     </nav>
@@ -122,6 +124,15 @@
     const navMenu = document.getElementById('nav-menu');
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('show');
+      hamburger.classList.toggle('close');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+        navMenu.classList.remove('show');
+        hamburger.classList.remove('close');
+      }
     });
 
     // Scroll Animation for Cards

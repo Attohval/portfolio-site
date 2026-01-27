@@ -28,7 +28,7 @@
       <div class="logo"><a href="index.html">Valentine Attoh</a></div>
 
       <label class="switch">
-        <input type="checkbox" id="theme-toggle">
+        <input type="checkbox" id="theme-toggle" title="Toggle dark mode">
         <span class="slider"></span>
       </label>
     </nav>
@@ -67,6 +67,15 @@
     const navMenu = document.getElementById('nav-menu');
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('show');
+      hamburger.classList.toggle('close');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+      if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+        navMenu.classList.remove('show');
+        hamburger.classList.remove('close');
+      }
     });
 
     // Scroll Animation for Cards
