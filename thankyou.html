@@ -41,8 +41,48 @@
   </section> 
 
   <!-- Footer -->
-  <footer class="footer">
-    <p class="copyRight"><span>2023 - </span> <span id="year"></span> &copy;Valentine Attoh</p>
+  <footer class="footer site-footer" aria-labelledby="footer-heading">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">Valentine Attoh</a>
+        <p class="brand-desc">Software Engineer — building user-friendly web and mobile experiences.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:attohval@gmail.com">attohval@gmail.com</a></p>
+        <p><a href="https://wa.me/2348068578671">+234 806 857 8671</a></p>
+        <p><a href="https://github.com/Attohval" target="_blank" rel="noopener">github.com/attohval</a></p>
+      </div>
+
+      <div class="footer-follow">
+        <h4>Stay Connected</h4>
+        <div class="socials">
+          <a href="https://github.com/Attohval" target="_blank" rel="noopener" title="GitHub"><i class="ri-github-fill f-icon"></i></a>
+          <a href="https://www.linkedin.com/in/attohval" target="_blank" rel="noopener" title="LinkedIn"><i class="ri-linkedin-box-fill f-icon"></i></a>
+          <a href="https://www.instagram.com/attohval" target="_blank" rel="noopener" title="Instagram"><i class="ri-instagram-fill f-icon"></i></a>
+        </div>
+
+        <!-- <form class="newsletter" onsubmit="event.preventDefault(); document.getElementById('subscribe-email').value=''; alert('Subscribed — thanks!');">
+          <input id="subscribe-email" type="email" placeholder="Your email" required>
+          <button class="primary-btn" type="submit">Subscribe</button>
+        </form> -->
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyRight"><span>2023 - </span> <span id="year"></span> &copy; Valentine Attoh</p>
+      <a id="scroll-btn" class="back-to-top" href="#" title="Back to top"><i class="ri-arrow-up-line"></i></a>
+    </div>
   </footer>
 
   <!-- Scripts -->
@@ -90,6 +130,26 @@
     }, { threshold: 0.2 });
 
     cards.forEach(card => observer.observe(card));
+    // Back-to-top button behavior
+    (function() {
+      const scrollBtn = document.getElementById('scroll-btn');
+      if (!scrollBtn) return;
+      scrollBtn.style.display = 'none';
+      const checkScroll = () => {
+        const scrolled = window.scrollY || document.documentElement.scrollTop;
+        if (scrolled >= 800) {
+          scrollBtn.style.display = 'block';
+        } else {
+          scrollBtn.style.display = 'none';
+        }
+      };
+      window.addEventListener('scroll', checkScroll, { passive: true });
+      checkScroll();
+      scrollBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
   </script>
 </body>
 </html>
