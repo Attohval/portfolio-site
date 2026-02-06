@@ -305,7 +305,7 @@ nav {
 }
 
 footer {
-  text-align: center;
+  /* text-align: center; */
   padding: 1rem;
   background: var(--nav);
   color: var(--nav-text);
@@ -557,6 +557,9 @@ input:checked + .slider:before {
   .form-container {
     margin-top: 0;
   }
+  .footer {
+    text-align: left;
+  }
 }
 @media (max-width: 665px) {
   .section {
@@ -597,9 +600,9 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 420px) {
-  .section {
+  /* .section {
     padding: 1rem;
-  }
+  } */
 
   .skills-list span {
     width: 9rem;
@@ -670,7 +673,6 @@ input:checked + .slider:before {
 .socials {
   display: flex;
   gap: 0.6rem;
-  margin-bottom: 0.8rem;
 }
 .socials .f-icon {
   font-size: 1.25rem;
