@@ -295,7 +295,7 @@
 
     cards.forEach(card => observer.observe(card));
 
-    // Back-to-top button: show only when scrolled 1000px or more
+    // Back-to-top button: show only when scrolled 600px or more
     (function() {
       const scrollBtn = document.getElementById('scroll-btn');
       if (!scrollBtn) return;
@@ -306,7 +306,7 @@
 
       const checkScroll = () => {
         const scrolled = window.scrollY || document.documentElement.scrollTop;
-        if (scrolled >= 1000) {
+        if (scrolled >= 600) {
           scrollBtn.style.display = 'block';
           scrollBtn.setAttribute('aria-hidden', 'false');
         } else {

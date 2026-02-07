@@ -167,6 +167,11 @@ nav {
   padding: 2rem 1rem;
   width: 100%;
   box-sizing: border-box;
+  border-bottom: 1px solid var(--primary);
+}
+
+.hero {
+  border-bottom: 1px solid var(--primary);
 }
 
 .flex {
@@ -228,9 +233,6 @@ nav {
   background-color: var(--icon-bg);
 }
 
-#projects {
-  padding-top: 6rem;
-}
 .project-header {
   display: flex;
   justify-content: space-between;
@@ -265,6 +267,11 @@ nav {
 .project-card:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   transform: scale(1.02);
+}
+
+#medical_website,
+#e-commerce {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -512,6 +519,10 @@ input:checked + .slider:before {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
   }
+  #medical_website,
+  #e-commerce {
+    display: block;
+  }
 }
 
 @media (min-width: 1220px) {
@@ -564,7 +575,7 @@ input:checked + .slider:before {
     background: var(--nav);
     flex-direction: column;
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 2rem 8rem;
     display: none;
     box-shadow: -2px 4px 8px rgba(0,0,0,0.1);
     box-sizing: border-box;
@@ -694,6 +705,7 @@ input:checked + .slider:before {
 .footer-follow h4 {
   margin-bottom: 0.6rem;
   font-size: 1rem;
+  color: var(--primary);
 }
 .footer-links ul {
   list-style: none;
@@ -764,6 +776,10 @@ input:checked + .slider:before {
   background: var(--primary);
   color: #fff;
   text-decoration: none;
+  position: fixed;
+  right: 1rem;
+  bottom: 6rem;
+  z-index: 999;
 }
 .back-to-top .ri-arrow-up-line {
   position: static;
