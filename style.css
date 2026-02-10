@@ -43,6 +43,7 @@ body {
 
 header {
   background: var(--nav);
+  border-bottom: 1px solid var(--primary);
   padding: 1rem 2rem;
   color: var(--nav-text);
   position: sticky;
