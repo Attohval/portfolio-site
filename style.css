@@ -665,6 +665,40 @@ h3 {
   gap: 2rem;
 }
 
+.section-highlight .cta-card {
+  padding: 3rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(29,78,216,0.08), rgba(4,120,87,0.06)),
+    rgba(255,255,255,0.08);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.section-highlight .cta-card-content {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-highlight .cta-card-content h2 {
+  max-width: 720px;
+}
+
+.btn-large {
+  min-width: 220px;
+  padding: 0 1.5rem;
+}
+
+.cta-action {
+  text-align: center;
+  margin-top: 3rem;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--line);
