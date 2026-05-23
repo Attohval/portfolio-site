@@ -50,7 +50,7 @@
   <header class="site-header">
     <nav class="navbar container" aria-label="Primary navigation">
       <a class="brand" href="index.html"><span class="brand-mark">VA</span><span>Valentine Attoh</span></a>
-      <ul class="nav-links" id="nav-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="services.html">Services</a></li><li><a href="skills.html">Skills</a></li><li><a class="active" href="contact.html">Contact</a></li></ul>
+      <ul class="nav-links" id="nav-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a class="active" href="services.html">Services</a></li><li><a href="skills.html">Skills</a></li><li><a href="contact.html">Contact</a></li></ul>
       <div class="nav-actions"><a class="btn btn-ghost" href="media/my-cv.pdf" download>Download CV</a><button class="menu-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu"><i class="ri-menu-3-line"></i></button></div>
     </nav>
   </header>
@@ -58,42 +58,44 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <span class="eyebrow reveal">Contact</span>
-        <h1 class="reveal">Tell me what you want to build.</h1>
-        <p class="lead reveal">Use the form or reach out directly by call, email, WhatsApp, or social media. I usually respond within 24hours. Next steps, scope questions, and a practical path forward.</p>
+        <span class="eyebrow reveal">Services</span>
+        <h1 class="reveal">Production-minded development for websites, apps, and business workflows.</h1>
+        <p class="lead reveal">I help turn ideas into responsive, maintainable products with clean UI, practical logic, and deployment-ready structure.</p>
       </div>
     </section>
 
     <section class="section-tight">
-      <div class="container contact-layout">
-        <aside class="grid reveal">
-          <article class="card pad"><div class="icon-box"><i class="ri-phone-line"></i></div><h3>Call</h3><p><a class="muted" href="tel:+2348068578671">+234 806 857 8671</a></p></article>
-          <article class="card pad"><div class="icon-box"><i class="ri-mail-line"></i></div><h3>Email</h3><p><a class="muted" href="mailto:attohval@gmail.com">attohval@gmail.com</a></p></article>
-          <!-- <article class="card pad"><div class="icon-box"><i class="ri-whatsapp-line"></i></div><h3>WhatsApp</h3><p><a class="muted" href="https://wa.me/2348068578671?text=Hello%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener">+234 806 857 8671</a></p></article> -->
-          <article class="card pad"><div class="icon-box"><i class="ri-github-line"></i></div><h3>GitHub</h3><p><a class="muted" href="https://github.com/Attohval" target="_blank" rel="noopener">github.com/Attohval</a></p></article>
-          <div class="socials"><a href="https://github.com/Attohval" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-fill"></i></a><a href="https://www.linkedin.com/in/attohval" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a><a href="https://www.instagram.com/attohval" target="_blank" rel="noopener" aria-label="Instagram"><i class="ri-instagram-fill"></i></a><a href="https://www.facebook.com/attohval" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-box-fill"></i></a></div>
-        </aside>
-
-        <form class="card pad contact-form reveal" name="contact" method="POST" data-netlify="true" data-contact-form action="thankyou.html" novalidate>
-          <input type="hidden" name="form-name" value="contact">
-          <input type="hidden" name="bot-field" aria-hidden="true">
-          <div class="field"><label for="name">Your Name</label><input id="name" name="name" type="text" placeholder="Valentine Attoh" autocomplete="name" required></div>
-          <div class="field"><label for="email">Your Email</label><input id="email" name="email" type="email" placeholder="attohval@gmail.com" autocomplete="email" required></div>
-          <div class="field"><label for="message">Project Details</label><textarea id="message" name="message" placeholder="Tell me about the project, timeline, and goals." required></textarea></div>
-          <p class="form-message" data-form-message aria-live="polite"></p>
-          <button class="btn btn-primary" type="submit">Send Message <i class="ri-send-plane-line"></i></button>
-        </form>
+      <div class="container grid grid-3">
+        <article class="card pad service-card reveal"><div class="icon-box"><i class="ri-window-line"></i></div><h3>Website Development</h3><p class="muted">Responsive business sites, landing pages, portfolios, and multi-page experiences built with semantic HTML, CSS, and JavaScript.</p></article>
+        <article class="card pad service-card reveal"><div class="icon-box"><i class="ri-code-s-slash-line"></i></div><h3>Frontend Implementation</h3><p class="muted">Clean UI build-outs with animation, accessibility basics, component structure, and responsive polish.</p></article>
+        <article class="card pad service-card reveal"><div class="icon-box"><i class="ri-database-2-line"></i></div><h3>Backend & APIs</h3><p class="muted">REST API structure, server-side logic, data handling, and integrations using Node.js, Express, Python, and SQL.</p></article>
+        <article class="card pad service-card reveal"><div class="icon-box"><i class="ri-android-line"></i></div><h3>Android Apps</h3><p class="muted">Java-based Android applications with API integration, useful flows, and user-focused screens.</p></article>
+        <article class="card pad service-card reveal"><div class="icon-box"><i class="ri-store-2-line"></i></div><h3>Business Software</h3><p class="muted">Desktop tools such as inventory and POS systems for small business operations.</p></article>
+        <article class="card pad service-card reveal"><div class="icon-box"><i class="ri-upload-cloud-2-line"></i></div><h3>Deployment Support</h3><p class="muted">GitHub Pages, Netlify, Git workflows, form setup, basic SEO structure, and launch cleanup.</p></article>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="card map-placeholder reveal">
-          <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070401.821655918!2d3.3526860261423668!3d9.006528826355112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sng!4v1779492884576!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+        <div class="section-heading reveal"><span class="eyebrow">Process</span><h2>A clear build path from idea to launch.</h2></div>
+        <div class="grid grid-4">
+          <article class="card pad process-step reveal"><span class="step-number">01</span><h3>Discover</h3><p class="muted">Clarify goals, content, users, pages, and the best technical direction.</p></article>
+          <article class="card pad process-step reveal"><span class="step-number">02</span><h3>Design</h3><p class="muted">Shape the layout, interaction patterns, and visual direction around the audience.</p></article>
+          <article class="card pad process-step reveal"><span class="step-number">03</span><h3>Build</h3><p class="muted">Implement responsive pages, JavaScript interactions, forms, and content structure.</p></article>
+          <article class="card pad process-step reveal"><span class="step-number">04</span><h3>Launch</h3><p class="muted">Test responsiveness, optimize assets, connect links, and prepare for deployment.</p></article>
         </div>
       </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <article class="card pad reveal"><span class="eyebrow">Starter</span><h2>Landing Page</h2><p class="lead">For focused offers, campaigns, products, and portfolio refreshes.</p><p class="muted">Includes responsive sections, contact CTA, animation polish, and deployment-ready files.</p><a class="btn btn-primary" href="contact.html">Request Quote</a></article>
+        <article class="card pad reveal"><span class="eyebrow">Custom</span><h2>Multi-page Build</h2><p class="lead">For businesses, communities, and products needing a deeper website.</p><p class="muted">Includes page architecture, project/service sections, forms, SEO metadata, and performance-friendly structure.</p><a class="btn btn-primary" href="contact.html">Start Project</a></article>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container cta-band reveal"><div class="cta-band-content"><div><span class="eyebrow">Why choose me</span><h2>Clean code, responsive polish, and practical product thinking.</h2></div><a class="btn btn-primary" href="projects.html">See Work</a></div></div>
     </section>
   </main>
 

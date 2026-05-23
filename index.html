@@ -1,325 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Valentine Attoh | Software Engineer</title>
+  <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Mobile Responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>Valentine Attoh | Software Engineer Portfolio</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional Software Engineer Portfolio showcasing web development projects, frontend skills, responsive websites, and modern UI designs.">
+
+    <meta name="keywords" content="Valentine Ebuke Attoh, Attohval, Software Engineer, Web Developer, Frontend Developer, Portfolio Website, HTML CSS JavaScript, React, Tailwind CSS, Bootstrap, Responsive Design">
+
+    <meta name="author" content="Valentine Ebuke Attoh">
+
+    <!-- Search Engine Indexing -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Valentine Attoh | Software Engineer">
+    <meta property="og:description" content="Explore my professional portfolio, projects, and development skills.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://attohval.github.io/portfolio-site">
+    <meta property="og:image" content="media/preview-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Valentine Attoh | Software Engineer">
+    <meta name="twitter:description" content="Professional portfolio showcasing projects, and development skills.">
+    <meta name="twitter:image" content="media/preview-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="media/icon.png">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
   
-  <meta name="author" content="Valentine Ebuke Attoh">
-  <meta name="description" content="Personal portfolio of Valentine Ebuke Attoh, showcasing web and mobile app projects, built with HTML, CSS, and JavaScript.">
-  <meta name="robots" content="index, follow">
-  <meta name="keywords" content="Valentine Attoh, portfolio, web developer, android developer, HTML, CSS, JavaScript, Android Studio, software engineering">
-  <meta property="og:title" content="Valentine Attoh | Portfolio">
-  <meta property="og:description" content="Explore my web and mobile development projects, built with HTML, CSS, JavaScript, and Android Studio.">
-  <meta property="og:image" content="https://attohval.github.io/portfolio-site/preview-image.webp">
-  <meta property="og:url" content="https://attohval.github.io/portfolio-site">
-  <meta property="og:type" content="website">
-  <link rel="icon" type="image/png" href="media/icon.png">
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://attohval.github.io/portfolio-site">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <div class="logo"><a href="index.html" id="active-page">Valentine Attoh</a></div>
-
-      <div class="hamburger" id="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation">
+      <a class="brand" href="index.html"><span class="brand-mark">VA</span><span>Valentine Attoh</span></a>
       <ul class="nav-links" id="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="project.html">Projects</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="skills.html">Skills</a></li>
         <li><a href="contact.html">Contact</a></li>
-
-        <li>
-          <div class="footer-right">
-            <a href="https://www.instagram.com/attohval" target="_blank" rel="noopener" title="Instagram Profile"><i class="ri-instagram-fill f-icon"></i></a>
-            <a href="https://www.facebook.com/attohval" target="_blank" rel="noopener" title="Facebook Profile"><i class="ri-facebook-box-fill f-icon"></i></a>
-            <a href="https://wa.me/2348068578671?text=Hello%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener" title="WhatsApp"><i class="ri-whatsapp-fill f-icon"></i></a>
-          </div>
-        </li>
       </ul>
-
-      <label class="switch">
-        <input type="checkbox" id="theme-toggle" title="Toggle dark mode">
-        <span class="slider"></span>
-      </label>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="media/my-cv.pdf" download>Download CV</a>
+        <button class="menu-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu"><i class="ri-menu-3-line"></i></button>
+      </div>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-detail">
-      <h1>Hi, I'm Valentine</h1>
-      <p>Software Engineer | Web & App Developer</p>
-      <a href="media/my-cv.pdf" class="primary-btn" download>Download Resume</a>
-    </div>
-    <div class="hero-image">
-      <img src="media/profile-picture.webp" alt="profile-picture of Valentine Ebuke Attoh">
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section">
-    <div class="flex">
-      <i class="ri-briefcase-fill"></i><h2>About Me</h2>
-    </div>
-    <p>
-      I am a highly motivated Software Engineer with a strong foundation in full-stack development, focused on building scalable, user-friendly web and mobile applications. From front-end interfaces to back-end systems, I enjoy solving real-world problems through clean, scalable code and intuitive design. Over time, I've built and contributed to various projects across frontend, backend, and mobile platforms.
-    </p>
-
-      <h3>Core Strengths</h3>
-      <p><i class="ri-checkbox-fill"></i>Frontend Development: Proficient in crafting responsive and accessible user interfaces using HTML, CSS, Tailwind, Bootstrap and JavaScript.</p>
-
-      <p><i class="ri-checkbox-fill"></i>Backend Development: Solid understanding of server-side development with Node.js, Express, and REST APIs.</p>
-
-      <p><i class="ri-checkbox-fill"></i>Mobile Development: Building Android applications using Java and Android Studio, with a focus on API integration and user experience.</p>
-
-      <p><i class="ri-checkbox-fill"></i>Version Control & Deployment: Comfortable using Git, GitHub, and deploying applications via Netlify and GitHub Pages.</p>
-
-      <p><i class="ri-checkbox-fill"></i>Problem Solving: Passionate about writing clean code, debugging, and building efficient solutions with attention to detail.</p>
-    
-
-      <h3>Tools & Technologies</h3>
-      <p><i class="ri-checkbox-fill"></i>Tools: HTML, CSS, JavaScript, Java, Python</p>
-      <p><i class="ri-checkbox-fill"></i>Frameworks & Libraries: Tailwind, Bootstrap, React</p>
-      <p><i class="ri-checkbox-fill"></i>Platforms: GitHub, Netlify, Android Studio</p>
-      <p><i class="ri-checkbox-fill"></i>Databases: SQL, Excel</p>
-      <p><i class="ri-checkbox-fill"></i>Other: Responsive design, Dark mode implementation, API integration</p>
-
-      <h3>Notable Projects</h3>
-      <p><i class="ri-checkbox-blank-circle-fill"></i>POS desktop application being used by over 10 business places (built with python + customTkinter + SQlite)</p>
-      <p><i class="ri-checkbox-blank-circle-fill"></i>Alumni Website: A modern hub where alumni stay informed about events, news, and opportunities.</p>
-      <p><i class="ri-checkbox-blank-circle-fill"></i>Software Engineer Portfolio: A multi-page portfolio with dark mode, animated project cards, and mobile-friendly navigation.</p>
-      <p><i class="ri-checkbox-blank-circle-fill"></i>Weather App: A Java-based Android application that fetches live weather updates using the OpenWeather API.</p>
-      <p><i class="ri-checkbox-blank-circle-fill"></i>Currency App: A Java-based Android application that fetches live currency exchange rates using the ExchangeRate API.</p>
-      <p><i class="ri-checkbox-blank-circle-fill"></i>Modern Workplace: A website designed to enhance productivity and collaboration in remote work environments.</p>
-      <p><i class="ri-checkbox-blank-circle-fill"></i>Fashion Store Website: A UI/UX-focused e-commerce site built for a design showcase, featuring category filtering and clean design.</p>
-
-      <h3>Career Goals</h3>
-      <p>I'm focused on gaining deeper expertise in software architecture, developing my modern frontend development skills for better user feel/experience, building more robust backend systems, and exploring cross-platform app development. Long-term, I aim to contribute to impactful software products and join a team where learning and innovation are valued.</p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="section">
-    <h2>Skills & Tools</h2>
-    <div class="skills-list">
-      <span>HTML</span><span>CSS</span><span> Tailwind</span><span>Bootstrap</span><span>React</span><span>JavaScript</span>
-      <span>Python</span><span>Java</span><span>SQL</span><span>Figma</span>
-      <span>Canva</span><span>Netlify</span><span>JSP</span><span>WordPress</span>
-    </div>
-  </section>
-  
-  <!-- Projects -->
-  <section id="projects" class="section">
-    <div class="project-header">
-      <h2>Recent Projects</h2>
-      <a href="project.html">VIEW MORE <i class="ri-arrow-right-up-line"></i></a>
-    </div>
-    <p>Here are some of my recent projects that showcase my skills in <strong>Website</strong> and <strong>Application</strong> development. Each project is designed to be responsive and user-friendly, with a focus on clean code and functionality.</p>
-
-    <div class="project-main">
-      <div class="project-card">
-        <img src="media/vtechEngineering.webp" alt="Vtech Engineering Landing Page">
-        <h3>Vtech Engineering</h3>
-        <p>A responsive website for a construction company showcasing their services and projects.</p>
-        <div class="btn">
-          <a class="primary-btn" href="https://attohval.github.io/Construction" target="_blank" rel="noopener">Live</a> <a class="secondary-btn" href="https://github.com/Attohval/Construction.git" target="_blank" rel="noopener">GitHub</a>
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow"><i class="ri-sparkling-2-line"></i> Software Engineer</span>
+          <h1>Building clean digital products with <span class="gradient-text">speed, polish, and purpose.</span></h1>
+          <p class="lead">Hi, I'm Valentine Ebuke Attoh. I design and develop responsive websites, backend systems, Android apps, and business tools that feel simple to use and solid under pressure.</p>
+          <p class="typing-line"><span data-typing='["Web Developer", "Android Developer", "Full-stack Builder", "Problem Solver"]'></span><span class="cursor"></span></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">View Projects <i class="ri-arrow-right-up-line"></i></a>
+            <a class="btn btn-secondary" href="contact.html">Contact Me <i class="ri-send-plane-line"></i></a>
+          </div>
         </div>
-      </div>      
-      <div class="project-card">
-        <img src="media/alumni_website.webp" alt="alumni website">
-        <h3>Alumni Website</h3>
-        <p>A responsive website for a secondary school alumni association to connect graduates and share updates.</p>
-        <div class="btn">
-          <a class="primary-btn" href="https://www.dccwalumni2000.org" target="_blank" rel="noopener">Live</a> <a class="secondary-btn" href="https://www.dccwalumni2000.org" target="_blank" rel="noopener">Visit Site</a>
+        <aside class="profile-card reveal">
+          <img src="media/profile-picture.webp" alt="Portrait of Valentine Ebuke Attoh">
+          <div class="profile-caption">
+            <strong>Valentine Ebuke Attoh</strong>
+            <span class="muted">Web, backend, and mobile application development.</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-tight" aria-label="Portfolio statistics">
+      <div class="container grid grid-4 stats-grid" data-counter-scope>
+        <div class="card stat reveal"><strong data-count="50" data-suffix="+">0</strong><span class="muted">Completed projects</span></div>
+        <div class="card stat reveal"><strong data-count="10" data-suffix="+">0</strong><span class="muted">Businesses using POS app</span></div>
+        <div class="card stat reveal"><strong data-count="4">0</strong><span class="muted">Core development areas</span></div>
+        <div class="card stat reveal"><strong data-count="2023">0</strong><span class="muted">Portfolio active since</span></div>
+      </div>
+    </section>
+
+    <!-- Featured work -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Featured work</span>
+          <h2>Recent projects with real screens and practical outcomes.</h2>
         </div>
-      </div>      
-      <div class="project-card">
-        <img src="media/gadget_store.webp" alt="Gadget Store">
-        <h3>Gadget Store</h3>
-        <p>A responsive e-commerce website for selling gadgets and electronics. Features include product filtering.</p>
-        <div class="btn">
-          <a class="primary-btn" href="https://attohval.github.io/gadget-store" target="_blank" rel="noopener">Live</a> <a class="secondary-btn" href="https://github.com/Attohval/gadget-store.git" target="_blank" rel="noopener">GitHub</a>
+        <div class="grid grid-3">
+          <article class="card project-card reveal">
+            <div class="project-image"><img src="media/e-commerce.webp" alt="Construction company"></div>
+            <div class="project-content">
+              <h3>E-Commerce Platform</h3>
+              <p class="muted">A modern frontend e-commerce solution for online retail businesses.</p>
+              <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="button-row"><a class="btn btn-primary" href="https://attohval.github.io/E-Commerce-Website" target="_blank" rel="noopener">Live</a><a class="btn btn-secondary" href="https://github.com/Attohval/E-Commerce-Website.git" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+          </article>
+          <article class="card project-card reveal">
+            <div class="project-image"><img src="media/bistroiConstruction.webp" alt="Construction company"></div>
+            <div class="project-content">
+              <h3>Bistroi Construction</h3>
+              <p class="muted">This is a website for a professional construction registered in Nigeria.</p>
+              <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="button-row"><a class="btn btn-primary" href="https://www.bistroiconstruction.com" target="_blank" rel="noopener">Live</a></div>
+            </div>
+          </article>
+          <article class="card project-card reveal">
+            <div class="project-image"><img src="media/usefinstack.webp" alt="Vtech Restaurant website preview"></div>
+            <div class="project-content">
+              <h3>Usefinstack</h3>
+              <p class="muted">A modern financial management platform for crypto enthusiasts.</p>
+              <div class="tag-list"><span class="tag">MongoDB</span><span class="tag">Tailwind</span><span class="tag">React</span></div>
+              <div class="button-row"><a class="btn btn-primary" href="https://www.usefinstack.co" target="_blank" rel="noopener">Live</a></div>
+            </div>
+          </article>
+          <article class="card project-card reveal">
+            <div class="project-image"><img src="media/vtechRestaurant.webp" alt="Vtech Restaurant website preview"></div>
+            <div class="project-content">
+              <h3>Vtech Restaurant</h3>
+              <p class="muted">A responsive restaurant website with menu presentation and online ordering.</p>
+              <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="button-row"><a class="btn btn-primary" href="https://attohval.github.io/Restaurant-Website" target="_blank" rel="noopener">Live</a><a class="btn btn-secondary" href="https://github.com/Attohval/Restaurant-Website.git" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+          </article>
+          <article class="card project-card reveal">
+            <div class="project-image"><img src="media/dccwAlumni.webp" alt="Alumni website preview"></div>
+            <div class="project-content">
+              <h3>Alumni Website</h3>
+              <p class="muted">A modern hub for alumni updates, events, news, and community connection.</p>
+              <div class="tag-list"><span class="tag">Responsive UI</span><span class="tag">Production Site</span></div>
+              <div class="button-row"><a class="btn btn-primary" href="https://www.dccwalumni2000.org" target="_blank" rel="noopener">Live</a></div>
+            </div>
+          </article>
+          <article class="card project-card reveal">
+            <div class="project-image"><img src="media/construction.webp" alt="Vtech Engineering website preview"></div>
+            <div class="project-content">
+              <h3>Vtech Engineering</h3>
+              <p class="muted">A responsive construction company website with service and project presentation.</p>
+              <div class="tag-list"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="button-row"><a class="btn btn-primary" href="https://attohval.github.io/Construction" target="_blank" rel="noopener">Live</a><a class="btn btn-secondary" href="https://github.com/Attohval/Construction.git" target="_blank" rel="noopener">GitHub</a></div>
+            </div>
+          </article>
+          <!-- <article class="card project-card reveal">
+            <div class="project-image"><img src="media/pos-software.webp" alt="Inventory manager desktop application preview"></div>
+            <div class="project-content">
+              <h3>Inventory Manager</h3>
+              <p class="muted">A POS and inventory desktop application used by more than ten business locations.</p>
+              <div class="tag-list"><span class="tag">Python</span><span class="tag">SQLite</span><span class="tag">CustomTkinter</span></div>
+              <div class="button-row"><a class="btn btn-primary" href="contact.html">Enquire</a></div>
+            </div>
+          </article> -->
         </div>
       </div>
-      <div class="project-card">
-        <img src="media/vtechChamber.webp" alt="UI/UX Portfolio Page">
-        <h3>Law Chamber Page</h3>
-        <p>A responsive website landing page for a law firm showcasing their services and legal expertise.</p>
-        <div class="btn">
-          <a class="primary-btn" href="https://attohval.github.io/vtechChamber" target="_blank" rel="noopener">Live</a> <a class="secondary-btn" href="https://github.com/Attohval/vtechChamber.git" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="media/LuxeStayHotel.webp" alt="LuxeStay Hotel">
-        <h3>LuxeStay Hotel</h3>
-        <p>A responsive luxury hotel website showcasing rooms, amenities, and booking options.</p>
-        <div class="btn">
-          <a class="primary-btn" href="https://attohval.github.io/LuxeStayHotel" target="_blank" rel="noopener">Live</a> <a class="secondary-btn" href="https://github.com/Attohval/LuxeStayHotel.git" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="media/wingside.webp" alt="Wingside Workspace">
-        <h3>Wingside Workspace</h3>
-        <p>A responsive modern workspace website for a tech company showcasing their packages and services.</p>
-        <div class="btn">
-          <a class="primary-btn" href="https://attohval.github.io/wingside" target="_blank" rel="noopener">Live</a> <a class="secondary-btn" href="https://github.com/Attohval/wingside.git" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-      <div class="project-card" id="swatDanceCrew">
-        <img src="media/swat.webp" alt="SWAT Dance Crew">
-        <h3>SWAT Dance Crew</h3>
-        <p>A responsive website for a female dance crew showcasing their performances and events.</p>
-        <div class="btn">
-          <a class="primary-btn" href="https://attohval.github.io/SWAT" target="_blank" rel="noopener">Live</a> <a class="secondary-btn" href="https://github.com/Attohval/SWAT.git" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
-      <div class="project-card" id="lawFirm">
-        <img src="media/law-firm-website.webp" alt="law-firm website">
-        <h3>Law Firm</h3>
-        <p>Responsive multiple page websites designed for legal firms to showcase their services and expertise.</p>
-        <div class="btn">
-          <a class="primary-btn" href="https://attohval.github.io/law-firm-website/" target="_blank" rel="noopener">Live</a> <a class="secondary-btn" href="https://github.com/Attohval/law-firm-website.git" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
+    </section>
 
-    </div>      
-  </section>
-  
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="cta-content">
-      <h2>Ready to Bring Your Ideas to Life?</h2>
-      <p>Let's collaborate on your next project and create something amazing together.</p>
-      <a href="contact.html" class="primary-btn cta-btn">Get In Touch</a>
-    </div>
-  </section>
- 
-  <!-- Footer -->
-  <footer class="footer site-footer" aria-labelledby="footer-heading">
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Capabilities</span>
+          <h2>Strong across interface, logic, mobile, and deployment.</h2>
+        </div>
+        <div class="grid grid-4">
+          <article class="card pad reveal"><div class="icon-box"><i class="ri-layout-4-line"></i></div><h3>Frontend</h3><p class="muted">Responsive, accessible interfaces using HTML, CSS, Tailwind, Bootstrap, React, and JavaScript.</p></article>
+          <article class="card pad reveal"><div class="icon-box"><i class="ri-server-line"></i></div><h3>Backend</h3><p class="muted">REST APIs and server-side logic with Node.js, Express, Python, SQL, and SQLite.</p></article>
+          <article class="card pad reveal"><div class="icon-box"><i class="ri-smartphone-line"></i></div><h3>Mobile</h3><p class="muted">Android applications built with Java and Android Studio, including API integration.</p></article>
+          <article class="card pad reveal"><div class="icon-box"><i class="ri-rocket-line"></i></div><h3>Deployment</h3><p class="muted">Git, GitHub, Netlify, and GitHub Pages workflows for fast releases.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3">
+        <article class="card pad reveal"><p class="muted">"Valentine builds interfaces with clear structure, responsive polish, and attention to the details clients notice."</p><h3>Website Client</h3></article>
+        <article class="card pad reveal"><p class="muted">"The POS software made inventory easier for our staff and gave the business a better daily workflow."</p><h3>Business User</h3></article>
+        <article class="card pad reveal"><p class="muted">"He thinks through the full experience, from layout to deployment, and keeps the build practical."</p><h3>Project Collaborator</h3></article>
+      </div>
+    </section>
+
+    <section class="section-tight">
+      <div class="container cta-band reveal">
+        <div class="cta-band-content">
+          <div>
+            <span class="eyebrow">Available for work</span>
+            <h2>Have a project that needs a clean, reliable build?</h2>
+          </div>
+          <a class="btn btn-primary" href="contact.html">Start a Conversation</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
     <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">Valentine Attoh</a>
-        <p class="brand-desc">Software Engineer — building user-friendly web and mobile experiences.</p>
-      </div>
-
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Contact</h4>
-        <p><a href="mailto:attohval@gmail.com">attohval@gmail.com</a></p>
-        <p><a href="https://wa.me/2348068578671">+234 806 857 8671</a></p>
-        <p><a href="https://github.com/Attohval" target="_blank" rel="noopener">github.com/attohval</a></p>
-      </div>
-
-      <div class="footer-follow">
-        <h4>Stay Connected</h4>
-        <div class="socials">
-          <a href="https://github.com/Attohval" target="_blank" rel="noopener" title="GitHub"><i class="ri-github-fill f-icon"></i></a>
-          <a href="https://www.linkedin.com/in/attohval" target="_blank" rel="noopener" title="LinkedIn"><i class="ri-linkedin-box-fill f-icon"></i></a>
-          <a href="https://www.instagram.com/attohval" target="_blank" rel="noopener" title="Instagram"><i class="ri-instagram-fill f-icon"></i></a>
-        </div>
-      </div>
+      <div><a class="brand" href="index.html"><span class="brand-mark">VA</span><span>Valentine Attoh</span></a><p class="muted">Software Engineer building user-friendly web and mobile experiences.</p></div>
+      <div><h3>Pages</h3><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="services.html">Services</a></li><li><a href="skills.html">Skills</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-contact"><h3>Contact</h3><p><a href="mailto:attohval@gmail.com">attohval@gmail.com</a></p><p><a href="https://wa.me/2348068578671">+234 806 857 8671</a></p><p><a href="https://github.com/Attohval" target="_blank" rel="noopener">github.com/Attohval</a></p></div>
+      <div><h3>Social</h3><div class="socials"><a href="https://github.com/Attohval" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-fill"></i></a><a href="https://www.linkedin.com/in/attohval" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a><a href="https://www.instagram.com/attohval" target="_blank" rel="noopener" aria-label="Instagram"><i class="ri-instagram-fill"></i></a><a href="https://www.facebook.com/attohval" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-box-fill"></i></a></div></div>
     </div>
-
-    <div class="footer-bottom">
-      <p class="copyRight"><span>2023 - </span> <span id="year"></span> &copy; Valentine Attoh</p>
-      <a id="scroll-btn" class="back-to-top" href="#" title="Back to top"><i class="ri-arrow-up-line"></i></a>
-    </div>
+    <div class="container footer-bottom"><p>2023 - <span data-year></span> &copy; Valentine Attoh</p><p>Designed and built with HTML, CSS, and JavaScript.</p></div>
   </footer>
-
-  <!-- Scripts -->
-  <script>
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Theme Toggle
-    const toggle = document.getElementById('theme-toggle');
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    document.body.classList.toggle('dark-mode', savedTheme === 'dark');
-    toggle.checked = savedTheme === 'dark';
-
-    toggle.addEventListener('change', () => {
-      const isDark = toggle.checked;
-      document.body.classList.toggle('dark-mode', isDark);
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    });
-
-    // Hamburger
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
-      hamburger.classList.toggle('close');
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', (event) => {
-      if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
-        navMenu.classList.remove('show');
-        hamburger.classList.remove('close');
-      }
-    });
-
-    // Scroll Animation for Cards
-    const cards = document.querySelectorAll('.project-card');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.2 });
-
-    cards.forEach(card => observer.observe(card));
-
-    // Back-to-top button: show only when scrolled 600px or more
-    (function() {
-      const scrollBtn = document.getElementById('scroll-btn');
-      if (!scrollBtn) return;
-
-      // Start hidden (in case CSS doesn't explicitly hide it)
-      scrollBtn.style.display = 'none';
-      scrollBtn.setAttribute('aria-hidden', 'true');
-
-      const checkScroll = () => {
-        const scrolled = window.scrollY || document.documentElement.scrollTop;
-        if (scrolled >= 600) {
-          scrollBtn.style.display = 'block';
-          scrollBtn.setAttribute('aria-hidden', 'false');
-        } else {
-          scrollBtn.style.display = 'none';
-          scrollBtn.setAttribute('aria-hidden', 'true');
-        }
-      };
-
-      // Passive scroll listener for performance
-      window.addEventListener('scroll', checkScroll, { passive: true });
-
-      // Initial check in case the page loads already scrolled
-      checkScroll();
-
-      // Smooth scroll to top when clicked
-      scrollBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      });
-    })();
-  </script>
+  <a class="back-to-top" href="#" aria-label="Back to top"><i class="ri-arrow-up-line"></i></a>
+  <a class="whatsapp-btn" href="https://wa.me/2348068578671?text=Hello%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="Chat with me on WhatsApp"><i class="ri-whatsapp-fill"></i></a>
+  <script src="script.js"></script>
 </body>
 </html>

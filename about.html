@@ -50,49 +50,49 @@
   <header class="site-header">
     <nav class="navbar container" aria-label="Primary navigation">
       <a class="brand" href="index.html"><span class="brand-mark">VA</span><span>Valentine Attoh</span></a>
-      <ul class="nav-links" id="nav-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="services.html">Services</a></li><li><a href="skills.html">Skills</a></li><li><a class="active" href="contact.html">Contact</a></li></ul>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Home</a></li><li><a class="active" href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="services.html">Services</a></li><li><a href="skills.html">Skills</a></li><li><a href="contact.html">Contact</a></li>
+      </ul>
       <div class="nav-actions"><a class="btn btn-ghost" href="media/my-cv.pdf" download>Download CV</a><button class="menu-toggle" type="button" aria-controls="nav-menu" aria-expanded="false" aria-label="Open menu"><i class="ri-menu-3-line"></i></button></div>
     </nav>
   </header>
 
   <main>
     <section class="page-hero">
-      <div class="container">
-        <span class="eyebrow reveal">Contact</span>
-        <h1 class="reveal">Tell me what you want to build.</h1>
-        <p class="lead reveal">Use the form or reach out directly by call, email, WhatsApp, or social media. I usually respond within 24hours. Next steps, scope questions, and a practical path forward.</p>
+      <div class="container hero-grid">
+        <div class="reveal">
+          <span class="eyebrow">About me</span>
+          <h1>I turn practical problems into clean software experiences.</h1>
+          <p class="lead">I am a highly motivated Software Engineer with a strong foundation in full-stack development, focused on building scalable, user-friendly web and mobile applications. From front-end interfaces to back-end systems, I enjoy solving real-world problems through clean, scalable code and intuitive design.</p>
+          <div class="button-row"><a class="btn btn-primary" href="media/my-cv.pdf" download>Download CV</a><a class="btn btn-secondary" href="contact.html">Work With Me</a></div>
+        </div>
+        <aside class="profile-card reveal"><img src="media/profile-picture.webp" alt="Valentine Ebuke Attoh profile image"><div class="profile-caption"><strong>Software Engineer</strong><span class="muted">Web, backend, Android, and desktop tools.</span></div></aside>
       </div>
     </section>
 
-    <section class="section-tight">
-      <div class="container contact-layout">
-        <aside class="grid reveal">
-          <article class="card pad"><div class="icon-box"><i class="ri-phone-line"></i></div><h3>Call</h3><p><a class="muted" href="tel:+2348068578671">+234 806 857 8671</a></p></article>
-          <article class="card pad"><div class="icon-box"><i class="ri-mail-line"></i></div><h3>Email</h3><p><a class="muted" href="mailto:attohval@gmail.com">attohval@gmail.com</a></p></article>
-          <!-- <article class="card pad"><div class="icon-box"><i class="ri-whatsapp-line"></i></div><h3>WhatsApp</h3><p><a class="muted" href="https://wa.me/2348068578671?text=Hello%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" target="_blank" rel="noopener">+234 806 857 8671</a></p></article> -->
-          <article class="card pad"><div class="icon-box"><i class="ri-github-line"></i></div><h3>GitHub</h3><p><a class="muted" href="https://github.com/Attohval" target="_blank" rel="noopener">github.com/Attohval</a></p></article>
-          <div class="socials"><a href="https://github.com/Attohval" target="_blank" rel="noopener" aria-label="GitHub"><i class="ri-github-fill"></i></a><a href="https://www.linkedin.com/in/attohval" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ri-linkedin-box-fill"></i></a><a href="https://www.instagram.com/attohval" target="_blank" rel="noopener" aria-label="Instagram"><i class="ri-instagram-fill"></i></a><a href="https://www.facebook.com/attohval" target="_blank" rel="noopener" aria-label="Facebook"><i class="ri-facebook-box-fill"></i></a></div>
-        </aside>
-
-        <form class="card pad contact-form reveal" name="contact" method="POST" data-netlify="true" data-contact-form action="thankyou.html" novalidate>
-          <input type="hidden" name="form-name" value="contact">
-          <input type="hidden" name="bot-field" aria-hidden="true">
-          <div class="field"><label for="name">Your Name</label><input id="name" name="name" type="text" placeholder="Valentine Attoh" autocomplete="name" required></div>
-          <div class="field"><label for="email">Your Email</label><input id="email" name="email" type="email" placeholder="attohval@gmail.com" autocomplete="email" required></div>
-          <div class="field"><label for="message">Project Details</label><textarea id="message" name="message" placeholder="Tell me about the project, timeline, and goals." required></textarea></div>
-          <p class="form-message" data-form-message aria-live="polite"></p>
-          <button class="btn btn-primary" type="submit">Send Message <i class="ri-send-plane-line"></i></button>
-        </form>
+    <section class="section">
+      <div class="container grid grid-2">
+        <article class="card pad reveal"><div class="icon-box"><i class="ri-focus-2-line"></i></div><h2>Core strengths</h2><p class="muted">Frontend development, backend APIs, Android applications, version control, deployment, debugging, and clean problem solving.</p></article>
+        <article class="card pad reveal"><div class="icon-box"><i class="ri-flag-line"></i></div><h2>Career goals</h2><p class="muted">I am focused on gaining deeper expertise in software architecture, modern frontend development, robust backend systems, and cross-platform app development. Long-term, I want to contribute to impactful products with teams that value learning and innovation.</p></article>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <div class="card map-placeholder reveal">
-          <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8070401.821655918!2d3.3526860261423668!3d9.006528826355112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0baf7da48d0d%3A0x99a8fe4168c50bc8!2sNigeria!5e0!3m2!1sen!2sng!4v1779492884576!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+        <div class="section-heading reveal"><span class="eyebrow">Experience</span><h2>Built across websites, apps, and business software.</h2></div>
+        <div class="timeline">
+          <article class="card timeline-item reveal"><div class="timeline-date">Current</div><div><h3>Software Engineering Portfolio</h3><p class="muted">Building responsive websites, landing pages, Android apps, and desktop tools for practical client and showcase use cases.</p></div></article>
+          <article class="card timeline-item reveal"><div class="timeline-date">Business tools</div><div><h3>POS Inventory Manager</h3><p class="muted">Created a Python, CustomTkinter, and SQLite inventory application now used by more than ten business places.</p></div></article>
+          <article class="card timeline-item reveal"><div class="timeline-date">Community web</div><div><h3>Alumni Website</h3><p class="muted">Delivered a modern website that helps alumni stay informed about events, news, and opportunities.</p></div></article>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-3">
+        <article class="card pad reveal"><div class="icon-box"><i class="ri-graduation-cap-line"></i></div><h3>Education</h3><p class="muted">Software engineering foundation strengthened through web, backend, mobile, database, and deployment projects.</p></article>
+        <article class="card pad reveal"><div class="icon-box"><i class="ri-award-line"></i></div><h3>Achievements</h3><p class="muted">Delivered more than a dozen web interfaces and a POS system with active business use.</p></article>
+        <article class="card pad reveal"><div class="icon-box"><i class="ri-tools-line"></i></div><h3>Tools</h3><p class="muted">HTML, CSS, JavaScript, Tailwind, Bootstrap, React, Node.js, Express, Python, Java, SQL, GitHub, Netlify, Android Studio, Figma, Canva, and WordPress.</p></article>
       </div>
     </section>
   </main>
