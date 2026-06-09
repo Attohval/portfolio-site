@@ -263,6 +263,7 @@ h3 {
 .button-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.9rem;
   margin-top: 2rem;
 }
@@ -666,7 +667,7 @@ h3 {
 }
 
 .section-highlight .cta-card {
-  padding: 3rem;
+  padding: 2rem 1rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
   background:
@@ -863,6 +864,10 @@ h3 {
   .hero-grid,
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+  .hero-grid :first-child {
+    text-align: center;
   }
 
   .grid-4,
