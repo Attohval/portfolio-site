@@ -288,7 +288,7 @@ h3 {
 
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: #06101b;
+  color: #fff;
 }
 
 .btn-secondary {
@@ -754,6 +754,7 @@ h3 {
 .socials a:hover {
   transform: translateY(-2px);
   color: var(--primary);
+  background: var(--card-bg);
 }
 
 .footer-bottom {
