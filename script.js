@@ -16,7 +16,7 @@ const closeMenu = () => {
 // Keep the transparent header and back-to-top button in sync with scroll depth.
 const setHeaderState = () => {
   header?.classList.toggle("scrolled", window.scrollY > 20);
-  backToTop?.classList.toggle("visible", window.scrollY > 520);
+  backToTop?.classList.toggle("visible", window.scrollY > 2500);
 };
 
 menuToggle?.addEventListener("click", () => {
